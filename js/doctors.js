@@ -1,12 +1,3 @@
-let slideOne = document.getElementById("slide-one");
-let slideTwo = document.getElementById("slide-two");
-
-console.log(slideOne)
-
-setInterval( () => { 
-  slideOne.classList.toggle("active")
-  slideTwo.classList.toggle("active")
-}, 5000)
 
 let closeBtn = document.querySelector(".search-close-btn button")
 
@@ -118,41 +109,74 @@ menuSubmit.onclick = function (e) {
   }
 
 
-  let addressBoxes = document.querySelectorAll(".address-box")
-  let addressOne   = document.querySelector(".address-one")
-  let addressTwo   = document.querySelector(".address-two")
-  let addressThree = document.querySelector(".address-three")
-  let addressFour  = document.querySelector(".address-four")
-  let iframeOne    = document.querySelectorAll(".location .row .col-md-6 iframe")[0]
-  let iframeTwo    = document.querySelectorAll(".location .row .col-md-6 iframe")[1]
-  let iframeThree  = document.querySelectorAll(".location .row .col-md-6 iframe")[2]
-  let iframeFour   = document.querySelectorAll(".location .row .col-md-6 iframe")[3]
-  console.log(iframeOne)
+  let addressLinkOne   = document.querySelector(".all")
+  let addressLinkTwo   = document.querySelector(".all2")
+  let addressLinkThree = document.querySelector(".all3")
+  let addressLinkFour  = document.querySelector(".all4")
+  let addressLinkFive  = document.querySelector(".all5")
+  let addressLinks     = document.querySelectorAll(".address-links ul li")
+  let doctorBoxes      = document.querySelectorAll(".doctor-box")
+  let doctros          = document.querySelectorAll(".doctor")
 
-
-    addressOne.onclick = function() {
-      iframeOne.classList.add("active")
-      iframeTwo.classList.remove("active")
-      iframeThree.classList.remove("active")
-      iframeFour.classList.remove("active")
+  
+  console.log(doctorBoxes[3].classList.contains("col-lg-3"))
+ 
+  addressLinkOne.onclick =function() {
+    for(let i = 0 ; i < addressLinks.length ; i++) {
+      addressLinks[i].classList.remove("active")
+      addressLinkOne.classList.add("active")
     }
-    addressTwo.onclick = function() {
-      iframeOne.classList.remove("active")
-      iframeTwo.classList.add("active")
-      iframeThree.classList.remove("active")
-      iframeFour.classList.remove("active")
+    for(let i = 0 ; i < doctorBoxes.length; i++) {
+      doctorBoxes[i].style.display = "flex"
     }
-    addressThree.onclick = function() {
-      iframeOne.classList.remove("active")
-      iframeTwo.classList.remove("active")
-      iframeThree.classList.add("active")
-      iframeFour.classList.remove("active")
+  }
+  addressLinkTwo.onclick =function() {
+    for(let i = 0 ; i < addressLinks.length ; i++) {
+      addressLinks[i].classList.remove("active")
+      addressLinkTwo.classList.add("active")
     }
-    addressFour.onclick = function() {
-      iframeOne.classList.remove("active")
-      iframeTwo.classList.remove("active")
-      iframeThree.classList.remove("active")
-      iframeFour.classList.add("active")
+    for(let i = 0 ; i < doctorBoxes.length; i++) {
+      doctorBoxes[i].style.display = "none"
+      if(doctorBoxes[i].classList.contains("zayed")) {
+        doctorBoxes[i].style.display = "flex"
+      }
     }
-    
+  }
+  addressLinkThree.onclick =function() {
+    for(let i = 0 ; i < addressLinks.length ; i++) {
+      addressLinks[i].classList.remove("active")
+      addressLinkThree.classList.add("active")
+    }
+    for(let i = 0 ; i < doctorBoxes.length; i++) {
+      doctorBoxes[i].style.display = "none"
+      if(doctorBoxes[i].classList.contains("october")) {
+        doctorBoxes[i].style.display = "flex"
+      }
+    }
+  }
+  addressLinkFour.onclick =function() {
+    for(let i = 0 ; i < addressLinks.length ; i++) {
+      addressLinks[i].classList.remove("active")
+      addressLinkFour.classList.add("active")
+    }
+    for(let i = 0 ; i < doctorBoxes.length; i++) {
+      doctorBoxes[i].style.display = "none"
+      if(doctorBoxes[i].classList.contains("cairo")) {
+        doctorBoxes[i].style.display = "flex"
+      }
+    }
+  }
+  console.log(addressLinkFour)
+  addressLinkFive.onclick =function() {
+    for(let i = 0 ; i < addressLinks.length ; i++) {
+      addressLinks[i].classList.remove("active")
+      addressLinkFive.classList.add("active")
+    }
+    for(let i = 0 ; i < doctorBoxes.length; i++) {
+      doctorBoxes[i].style.display = "none"
+      if(doctorBoxes[i].classList.contains("giza")) {
+        doctorBoxes[i].style.display = "flex"
+      }
+    }
+  }
 

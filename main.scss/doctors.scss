@@ -547,567 +547,101 @@ ul {
   }
 }
 /* End Mobile Second Bar */
-
-/* Start Slider */
-.slider {
-    .slide-one {
-      transition: $transition;
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-      }
-    }
-    .slide-two {
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-
-      }
-    }
-}
-/* End Slider */
-/* Start team */
-.team {
-  background-color: $section-color;
-  @include breakpoints(small) {
-    display: none !important;
-  }
+/* Start Doctors */
+.doctors {
   .container {
-
-    position: relative;
-    transition: $transition-so-slow;
-    &.active {
-      left: 0%;
-    }
-    .carousel-indicators {
-      margin-bottom: -4%;
-      .data-bs-target {
-        background-color: $main-color !important;
-      }
-    }
-    .carousel-control-next {
-      transform: translateX(70%);
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      transform: translateX(-70%);
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-dark {
-      .carousel-inner {
-        .row {
-          .card {
-            background-color: transparent;
-            border: none;
-            img {
-              border-radius: 8px;
-            }
-            .card-body {
-              .card-title {
-                color: $main-color;
-              }
-              p {
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/* End team */
-/* Start team two */
-.team-two {
-  background-color: $section-color;
-  @include breakpoints(small) {
-    display: block !important;
-  }
-  .container {
-
-
-    position: relative;
-    transition: $transition-so-slow;
-    &.active {
-      left: 0%;
-    }
-    .carousel-indicators {
-      margin-bottom: -6%;
-      .data-bs-target {
-        background-color: $main-color !important;
-      }
-    }
-    .carousel-control-next {
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-dark {
-      .carousel-inner {
-        .row {
-          .card {
-            background-color: transparent;
-            border: none;
-            img {
-              border-radius: 8px;
-            }
-            .card-body {
-              .card-title {
-                color: $main-color;
-              }
-              p {
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/* Start Services*/
-.services {
-  position: relative;
-  .special-title {
-    color: black;
-  }
-  .special-span-two {
-    background-color: #777;
-  }
-  .container {
-
-    .row {
-      margin-bottom: 5%;
-      gap: 2rem;
+    .flex {
       display: flex;
-      @include flexCenter;
-      .card {
-        @include flexCenter;
-        background: $color-hover;
-        width: 100%;
-        max-width: 220px;
-        width: 100%;
-        transition: $transition;
-        a {
-        padding: 30px 20px;
-          
-        }
-        img {
-          width: 50%;
-          max-width: 180px;
-          margin: 0 auto;
-          display: block;
-        }
-        p {
-          text-align: center;
-          font-size: $font-size-small;
-          color: white;
-          font-weight: 500;
-        }
-        &:hover {
-          margin-top: -1%;
-        }
-      }
-    } 
-    .booking-btn {
-      @include flexCenter;
-      @include none;
-      transition: $transition;
-      background-color: $second-color;
-      width: 270px;
-      height: 80px;
-      margin: auto;
-      padding: 10px 20px;
-      border-radius: 5px;
-      &:hover {
-        svg {
-          padding-left: 15px;
-        }
-      }
-      button {
-        @include btnNone;
-          color: white;
-          font-weight: bolder;
-          transition: $transition;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .title {
+        h2 {
           font-size: $font-size;
-          svg {
-          transition: $transition;
-          padding-left: 10px;
-          }
-      }
-    }
-    }
-  }
-/* End Services*/
-
-
-/* Start Article */
-.articles {
-  @include breakpoints(small) {
-    display: none !important;
-  }
-  .container {
-    @include flexCenter;
-    flex-direction: column;
-    position: relative;
-    // right: -100%;
-    transition: $transition-so-slow;
-    &.active {
-      right: 0%;
-    }
-    .carousel {
-      .carousel-inner {
-        .carousel-item {
-          .row {
-            padding: 1rem;
-            .card {
-              direction: rtl;
-              border: none;
-              @include boxShadow;
-              .image {
-                position: relative;
-                img {
-                max-width:100%;
-
-                }
-
-                cursor: pointer;
-                .img-icon {
-                  position: absolute;
-                  left: 5%;
-                  top: 5%;
-                  transition: $transition;
-                  background-color: rgba(0, 153, 153, 0.51);
-                  color: white;
-                  font-size: x-large;
-                  width: 15%;
-                  height: 25%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  svg {
-
-                    color:#fff;
-                    padding: 1rem;
-                  }
-                }
-                &:hover .img-icon {
-                  width: 100%;
-                  height: 100%;
-                  padding: 0;
-                  left: 0;
-                  top: 0;
-                  font-size: xx-large;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                }
-              }
-              .card-body {
-                .card-title {
-                  // color: white;
-                  margin: 10px 0;
-                  color: $color-hover;
-                }
-                .card-text {
-                }
-              }
-            }
-          }
         }
       }
-    }
-    .carousel-indicators {
-      // transform: translateY(400%);
-      margin-bottom: -3%;
-      .data-bs-target {
-        background-color: $color-hover !important;
-      }
-    }
-    .carousel-control-next {
-      transform: translateX(70%);
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      transform: translateX(-70%);
-
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    button {
-      @include btnNone;
-      margin-top: 5.5%;
-
-    }
-  }
-}
-/* End Article */
-/* Start Article two */
-.articles-two {
-  display: none;
-  @include breakpoints(small) {
-    display: block !important;
-  }
-  overflow: hidden;
-  .container {
-
-    @include flexCenter;
-    flex-direction: column;
-    position: relative;
-    transition: $transition-so-slow;
-    &.active {
-      right: 0%;
-    }
-    .carousel {
-      .carousel-inner {
-        .carousel-item {
-          .row {
-            padding: 1rem;
-            .card {
-              direction: rtl;
-              border: none;
-              @include boxShadow;
-
-              .image {
-                position: relative;
-                cursor: pointer;
-                .img-icon {
-                  position: absolute;
-                  left: 5%;
-                  top: 5%;
-                  transition: $transition;
-                  background-color: rgba(0, 153, 153, 0.51);
-                  color: white;
-                  font-size: x-large;
-                  width: 15%;
-                  height: 25%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  svg {
-                    padding: 1rem;
-                    color: #fff;
-                  }
-                }
-                &:hover .img-icon {
-                  width: 100%;
-                  height: 100%;
-                  padding: 0;
-                  left: 0;
-                  top: 0;
-                  font-size: xx-large;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                }
-              }
-              .card-body {
-                .card-title {
-                  // color: white;
-                  margin: 10px 0;
-                  color: $color-hover;
-                }
-                .card-text {
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .carousel-indicators {
-      margin-bottom: -6%;
-      .data-bs-target {
-        background-color: $color-hover !important;
-      }
-    }
-    .carousel-control-next {
-      transform: translateX(60%);
-      @include breakpoints(mobile) {
-        transform: translateX(27%);
-      }
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      transform: translateX(-60%);
-      @include breakpoints(mobile) {
-        transform: translateX(-27%);
-      }
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    button {
-      margin-top: 15%;
-      @include btnNone;
-      h3 {
-        padding: 20px 30px;
-        font-size: $font-size-alt !important;
-        transition: 1s ease;
-      }
-    }
-  }
-}
-/* End Article two */
-/* Start info */
-.info {
-  position: relative;
-    .container {
-      transition: $transition-so-slow;
-      left: 0%;
-      .row {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        direction: rtl;
-        @include breakpoints(small) {
-          gap: 2rem;
-        }
-        .box {
-          @include boxShadow;
-          height: 20vh;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 1rem;
-          cursor: pointer;
-          gap: 1rem;
-          transition: $transition;
-          &:hover {
-            background-color: $color-hover;
-          }
-          &:hover .address-logo,
-          &:hover .address,
-          &:hover .address a {
-            color: white !important;
-          }
-          .logo {
-            padding: 1rem;
-            color: $color-hover;
-            background-color: white;
-            transition: $transition;
-          }
-          .column-box {
+      .address-links {
+          ul {
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            .address-logo {
-              font-weight: bolder;
-              font-size: x-large;
-              color: $color-hover;
+            flex-direction: row-reverse;
+            gap: 3rem;
+            border-bottom: 1px solid $p-color;
+             li {
+              cursor: pointer;
               transition: $transition;
-            }
-            .address {
-              transition: $transition;
-              color: $p-color;
-              a {
-                transition: $transition;
-                color: $p-color;
+              padding-bottom: 1rem;
+              &.active  {
+                border-bottom: 2px solid $main-color;
+                color: $main-color;
               }
-            }
+              &:hover {
+                color: $main-color;
+                border-bottom: 2px solid $main-color;
+              }
+             }
           }
+      }
+    }
+    .doctors-cards {
+      display: flex;
+      flex-direction: row-reverse;
+
+      @include breakpoints(small) {
+      justify-content: center;
+
+      }
+      flex-wrap: wrap;
+      gap: 3rem;
+
+      .doctor {
+        .doctor-box {
+          
+          @include boxShadow;
+          @include flexCenter;
+          @include breakpoints(mobile) {
+            width: 100%;
+          }
+          padding: 25px 35px;
+          flex-direction: column;
+          text-align: center; 
+          width: 100%;
+          width: 255px;
+          height: 50vh;
+            img {
+              filter: drop-shadow(0 4px 10px #05683930);
+              border-radius: 50%;
+  
+              max-width: 100%;
+              border: 3px solid white;
+              margin-bottom: 2rem;
+            }
+            .info {
+              .branch {
+                color: $main-color;
+                cursor: pointer;
+                svg {
+                  transition: $transition;
+                  padding-left: 3px;
+                }
+                &:hover {
+                  svg {
+                    padding-left: 6px;
+                  }
+                }
+  
+              }
+  
+            }
         }
       }
     }
-}
-/* End info */
-/* Start Location */
-.location {
-  .row {
-    @include breakpoints(small) {
-      width:100%;
-    }
-    .col-md-6 {
-      padding: 0;
-      margin: 0;
-      gap: 0;
-    }
-    
-    iframe {
-      margin: 0;
-      padding: 0;
-      gap: 0;
-      display: none;
-      width: 100%;
-      &.active {
-        display: block;
-        
-      }
-    }
-
-    .map-address {
-      direction:rtl;
-      .row-box {
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-      }
-      .address-box {
-        width: 100%;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: $color-hover;
-        color: #fff;
-        text-align: center;
-        padding: 35.5px 40px;
-        height: 31.3vh ;
-      }
-      .address-one {
-        border-left: 1px solid white;
-        border-bottom: 1px solid white;
-      }
-      .address-two {
-        border-bottom: 1px solid white;
-      }
-      .address-three {
-        border-left: 1px solid #fff;
-      }
-      
-      
-
-    }
   }
 }
-/* End Location */
+/* End Doctors */
 /* Start Footer */
 .footer {
+    display: none;
   position: relative;
   direction: rtl;
   background-color: $main-color;
