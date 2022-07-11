@@ -490,7 +490,7 @@ ul {
 }
 /* End Landing */
 /* Start Mobile Second Bar */
-.mob-second-bar {
+.second-bar-mobile {
   box-shadow: 0 8px 50px #0566390d;
   direction: rtl;
   .container {
@@ -551,570 +551,120 @@ ul {
   }
 }
 /* End Mobile Second Bar */
-
-/* Start Slider */
-.slider {
-    .slide-one {
-      transition: $transition;
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-      }
+/* Start DoctorInfo */
+  .doctor-info {
+  background-color: $section-color-two;
+    @include breakpoints(small) {
+      @include boxShadow;
     }
-    .slide-two {
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
+    .container {
+      .back {
+        direction: rtl;
+        svg {
+          margin-bottom: 5rem;
+          border-radius: 50%;
+          background-color:#f5f9f7;
+          font-size: $font-size;
+          padding: 15px 20px;
+          color: black;
+        }
       }
-      &.active {
-        display: block;
-        opacity: 1;
-
-      }
-    }
-}
-/* End Slider */
-/* Start team */
-.team {
-  background-color: $section-color;
-  @include breakpoints(small) {
-    display: none !important;
-  }
-  .container {
-
-    position: relative;
-    transition: $transition-so-slow;
-    &.active {
-      left: 0%;
-    }
-    .carousel-indicators {
-      margin-bottom: -4%;
-      .data-bs-target {
-        background-color: $main-color !important;
-      }
-    }
-    .carousel-control-next {
-      transform: translateX(70%);
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      transform: translateX(-70%);
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-dark {
-      .carousel-inner {
         .row {
-          .card {
-            background-color: transparent;
-            border: none;
+          direction: rtl;
             img {
-              border-radius: 8px;
+              @include imgShadow;
             }
-            .card-body {
-              .card-title {
-                color: $main-color;
+            .info {
+              .name {
+                font-size: 30px;
               }
-              p {
+              .work {
+                color: $section-color;
+              }
+              .branch {
+
+                color: $main-color;
+                cursor: pointer;
+                svg {
+
+                  transition: $transition;
+                  padding-left: 3px;
+                }
+                &:hover {
+                  svg {
+                    padding-left: 6px;
+                  }
+                }
+  
               }
             }
           }
-        }
-      }
     }
   }
-}
-/* End team */
-/* Start team two */
-.team-two {
-  background-color: $section-color;
-  @include breakpoints(small) {
-    display: block !important;
-  }
+/* End DoctorInfo */
+/*Start Call Us*/
+.call {
+  direction: rtl;
+  background-color: $section-color-two;
   .container {
-
-
-    position: relative;
-    transition: $transition-so-slow;
-    &.active {
-      left: 0%;
-    }
-    .carousel-indicators {
-      margin-bottom: -6%;
-      .data-bs-target {
-        background-color: $main-color !important;
-      }
-    }
-    .carousel-control-next {
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-dark {
-      .carousel-inner {
-        .row {
-          .card {
-            background-color: transparent;
-            border: none;
-            img {
-              border-radius: 8px;
-            }
-            .card-body {
-              .card-title {
-                color: $main-color;
-              }
-              p {
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-/* Start Services*/
-.services {
-  position: relative;
-  .special-title {
-    color: black;
-  }
-  .special-span-two {
-    background-color: #777;
-  }
-  .container {
-
-    .row {
-      margin-bottom: 5%;
-      gap: 2rem;
+    .call-box {
       display: flex;
-      @include flexCenter;
-      .card {
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $main-color;
+      width: 100%;
+      padding: 30px;
+      gap: 50px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      h2 {
         @include flexCenter;
-        background: $color-hover;
-        width: 100%;
-        max-width: 220px;
-        width: 100%;
-        transition: $transition;
-        a {
-        padding: 30px 20px;
-          
-        }
-        img {
-          width: 50%;
-          max-width: 180px;
-          margin: 0 auto;
-          display: block;
+        direction: rtl;
+        color: white;
+        gap: 5px;
+        flex-wrap: wrap;
+        @include breakpoints(medium) {
+          gap: 40px;
+          justify-content: flex-start;
         }
         p {
-          text-align: center;
+          @include flexCenter;
+          font-weight: normal;
           font-size: $font-size-small;
-          color: white;
-          font-weight: 500;
+          margin-top: 4%;
+          padding: 5px;
+          @include breakpoints(medium) {
+            margin-top: 0%;
+          }
         }
+      }
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 21px;
+        background-color: $second-color;
+        color: white;
+        border-radius: 30px;
+        padding: 20px;
+        gap: 5px;
+        direction: ltr;
+        transition: $transition;
         &:hover {
-          margin-top: -1%;
+          background-color: $section-color;
         }
-      }
-    } 
-    .booking-btn {
-      @include flexCenter;
-      @include none;
-      transition: $transition;
-      background-color: $second-color;
-      width: 270px;
-      height: 80px;
-      margin: auto;
-      padding: 10px 20px;
-      border-radius: 5px;
-      &:hover {
-        svg {
-          padding-left: 15px;
-        }
-      }
-      button {
-        @include btnNone;
-          color: white;
-          font-weight: bolder;
-          transition: $transition;
-          font-size: $font-size;
-          svg {
-          transition: $transition;
-          padding-left: 10px;
-          }
-      }
-    }
-    }
-  }
-/* End Services*/
-
-
-/* Start Article */
-.articles {
-  @include breakpoints(small) {
-    display: none !important;
-  }
-  .container {
-    @include flexCenter;
-    flex-direction: column;
-    position: relative;
-    // right: -100%;
-    transition: $transition-so-slow;
-    &.active {
-      right: 0%;
-    }
-    .carousel {
-      .carousel-inner {
-        .carousel-item {
-          .row {
-            padding: 1rem;
-            .card {
-              direction: rtl;
-              border: none;
-              @include boxShadow;
-              .image {
-                position: relative;
-                img {
-                max-width:100%;
-
-                }
-
-                cursor: pointer;
-                .img-icon {
-                  position: absolute;
-                  left: 5%;
-                  top: 5%;
-                  transition: $transition;
-                  background-color: rgba(0, 153, 153, 0.51);
-                  color: white;
-                  font-size: x-large;
-                  width: 15%;
-                  height: 25%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  svg {
-
-                    color:#fff;
-                    padding: 1rem;
-                  }
-                }
-                &:hover .img-icon {
-                  width: 100%;
-                  height: 100%;
-                  padding: 0;
-                  left: 0;
-                  top: 0;
-                  font-size: xx-large;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                }
-              }
-              .card-body {
-                .card-title {
-                  // color: white;
-                  margin: 10px 0;
-                  color: $color-hover;
-                }
-                .card-text {
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .carousel-indicators {
-      // transform: translateY(400%);
-      margin-bottom: -3%;
-      .data-bs-target {
-        background-color: $color-hover !important;
-      }
-    }
-    .carousel-control-next {
-      transform: translateX(70%);
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      transform: translateX(-70%);
-
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    button {
-      @include btnNone;
-      margin-top: 5.5%;
-
-    }
-  }
-}
-/* End Article */
-/* Start Article two */
-.articles-two {
-  display: none;
-  @include breakpoints(small) {
-    display: block !important;
-  }
-  overflow: hidden;
-  .container {
-
-    @include flexCenter;
-    flex-direction: column;
-    position: relative;
-    transition: $transition-so-slow;
-    &.active {
-      right: 0%;
-    }
-    .carousel {
-      .carousel-inner {
-        .carousel-item {
-          .row {
-            padding: 1rem;
-            .card {
-              direction: rtl;
-              border: none;
-              @include boxShadow;
-
-              .image {
-                position: relative;
-                cursor: pointer;
-                .img-icon {
-                  position: absolute;
-                  left: 5%;
-                  top: 5%;
-                  transition: $transition;
-                  background-color: rgba(0, 153, 153, 0.51);
-                  color: white;
-                  font-size: x-large;
-                  width: 15%;
-                  height: 25%;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  svg {
-                    padding: 1rem;
-                    color: #fff;
-                  }
-                }
-                &:hover .img-icon {
-                  width: 100%;
-                  height: 100%;
-                  padding: 0;
-                  left: 0;
-                  top: 0;
-                  font-size: xx-large;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                }
-              }
-              .card-body {
-                .card-title {
-                  // color: white;
-                  margin: 10px 0;
-                  color: $color-hover;
-                }
-                .card-text {
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .carousel-indicators {
-      margin-bottom: -6%;
-      .data-bs-target {
-        background-color: $color-hover !important;
-      }
-    }
-    .carousel-control-next {
-      transform: translateX(60%);
-      @include breakpoints(mobile) {
-        transform: translateX(27%);
-      }
-      .carousel-control-next-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    .carousel-control-prev {
-      transform: translateX(-60%);
-      @include breakpoints(mobile) {
-        transform: translateX(-27%);
-      }
-      .carousel-control-prev-icon {
-        color: $color-hover;
-        background-image: none;
-      }
-    }
-    button {
-      margin-top: 15%;
-      @include btnNone;
-      h3 {
-        padding: 20px 30px;
-        font-size: $font-size-alt !important;
-        transition: 1s ease;
       }
     }
   }
 }
-/* End Article two */
-/* Start info */
-.info {
-  position: relative;
-    .container {
-      transition: $transition-so-slow;
-      left: 0%;
-      .row {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        direction: rtl;
-        @include breakpoints(small) {
-          gap: 2rem;
-        }
-        .box {
-          @include boxShadow;
-          height: 20vh;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 1rem;
-          cursor: pointer;
-          gap: 1rem;
-          transition: $transition;
-          &:hover {
-            background-color: $color-hover;
-          }
-          &:hover .address-logo,
-          &:hover .address,
-          &:hover .address a {
-            color: white !important;
-          }
-          .logo {
-            padding: 1rem;
-            color: $color-hover;
-            background-color: white;
-            transition: $transition;
-          }
-          .column-box {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            .address-logo {
-              font-weight: bolder;
-              font-size: x-large;
-              color: $color-hover;
-              transition: $transition;
-            }
-            .address {
-              transition: $transition;
-              color: $p-color;
-              a {
-                transition: $transition;
-                color: $p-color;
-              }
-            }
-          }
-        }
-      }
-    }
-}
-/* End info */
-/* Start Location */
-.location {
-  .row {
-    @include breakpoints(small) {
-      width:100%;
-    }
-    .col-md-6 {
-      padding: 0;
-      margin: 0;
-      gap: 0;
-    }
-    
-    iframe {
-      margin: 0;
-      padding: 0;
-      gap: 0;
-      display: none;
-      width: 100%;
-      &.active {
-        display: block;
-        
-      }
-    }
+/* End Call US */
 
-    .map-address {
-      direction:rtl;
-      .row-box {
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-      }
-      .address-box {
-        width: 100%;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: $color-hover;
-        color: #fff;
-        text-align: center;
-        padding: 35.5px 40px;
-        height: 31.3vh ;
-      }
-      .address-one {
-        border-left: 1px solid white;
-        border-bottom: 1px solid white;
-      }
-      .address-two {
-        border-bottom: 1px solid white;
-      }
-      .address-three {
-        border-left: 1px solid #fff;
-      }
-      
-      
-
-    }
-  }
-}
-/* End Location */
 /* Start Footer */
 .footer {
+  
   position: relative;
-  direction: rtl;
   @include boxShadow;
+  direction: rtl;
   background-color: $main-color;
   width: 100%;
   margin-bottom: -1.9%;

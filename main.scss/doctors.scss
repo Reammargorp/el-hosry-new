@@ -221,6 +221,7 @@ ul {
 /* End Header */
 /* Start Second Bar */
 .second-bar {
+  @include boxShadow;
   position: relative;
   height: fit-content;
   direction: rtl;
@@ -490,9 +491,9 @@ ul {
 /* End Landing */
 /* Start Mobile Second Bar */
 .mob-second-bar {
+  box-shadow: 0 8px 50px #0566390d;
   direction: rtl;
   .container {
-
 
     .navbar {
       .navbar-brand {
@@ -519,6 +520,9 @@ ul {
           &.btn {
             background-color: $color-hover;
             border-radius: 40px;
+            width: 100%;
+            text-align: center;
+            margin: 2rem 0;
           }
           &:hover {
             color: $p-color;
@@ -549,51 +553,75 @@ ul {
 /* End Mobile Second Bar */
 /* Start Doctors */
 .doctors {
+  background-color: $section-color-two;
+
+
+  @include breakpoints(small) {
+    @include boxShadow;
+  }
   .container {
-    .flex {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      justify-content: flex-end;
-      align-items: flex-end;
-      .title {
-        h2 {
-          font-size: $font-size;
+    .title {
+      h2 {
+        @include breakpoints(small) {
+          text-align: center;
         }
-      }
-      .address-links {
-          ul {
-            display: flex;
-            flex-direction: row-reverse;
-            gap: 3rem;
-            border-bottom: 1px solid $p-color;
-             li {
-              cursor: pointer;
-              transition: $transition;
-              padding-bottom: 1rem;
-              &.active  {
-                border-bottom: 2px solid $main-color;
-                color: $main-color;
-              }
-              &:hover {
-                color: $main-color;
-                border-bottom: 2px solid $main-color;
-              }
-             }
-          }
+        margin-bottom: 3rem;
+        direction: rtl;
+        font-size: $font-size;
       }
     }
-    .doctors-cards {
+    .flex {
       display: flex;
       flex-direction: row-reverse;
-
+      justify-content: space-between;
+      align-items: center;
       @include breakpoints(small) {
-      justify-content: center;
-
+        flex-direction: column;
       }
-      flex-wrap: wrap;
+        .address-links {
+          @include breakpoints(small) {
+            margin-bottom: 3rem;
+          }
+            ul {
+              display: flex;
+              flex-direction: row-reverse;
+              gap: 3rem;
+               li {
+                cursor: pointer;
+                transition: $transition;
+                padding-bottom: 1rem;
+                &.active  {
+                  border-bottom: 2px solid $main-color;
+                  color: $main-color;
+                }
+                &:hover {
+                  color: $main-color;
+                  border-bottom: 2px solid $main-color;
+                }
+               }
+            }
+        }
+        .doctors-list {
+          display: flex;
+          direction: rtl;
+          select {
+            width: 300px;
+            @include breakpoints(mobile) {
+              width: 250px;
+            }
+            font-size: $font-size-small;
+            font-weight: bolder;
+          }
+        }
+      }
+    .doctors-cards {
       gap: 3rem;
-
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
       .doctor {
         .doctor-box {
           
@@ -609,12 +637,7 @@ ul {
           width: 255px;
           height: 50vh;
             img {
-              filter: drop-shadow(0 4px 10px #05683930);
-              border-radius: 50%;
-  
-              max-width: 100%;
-              border: 3px solid white;
-              margin-bottom: 2rem;
+              @include imgShadow;
             }
             .info {
               .branch {
@@ -639,9 +662,68 @@ ul {
   }
 }
 /* End Doctors */
+
+
+/*Start Call Us*/
+.call {
+  direction: rtl;
+  background-color: $section-color-two;
+  .container {
+    .call-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $main-color;
+      width: 100%;
+      padding: 30px;
+      gap: 50px;
+      border-radius: 10px;
+      flex-wrap: wrap;
+      h2 {
+        @include flexCenter;
+        direction: rtl;
+        color: white;
+        gap: 5px;
+        flex-wrap: wrap;
+        @include breakpoints(medium) {
+          gap: 40px;
+          justify-content: flex-start;
+        }
+        p {
+          @include flexCenter;
+          font-weight: normal;
+          font-size: $font-size-small;
+          margin-top: 4%;
+          padding: 5px;
+          @include breakpoints(medium) {
+            margin-top: 0%;
+          }
+        }
+      }
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 21px;
+        background-color: $second-color;
+        color: white;
+        border-radius: 30px;
+        padding: 20px;
+        gap: 5px;
+        direction: ltr;
+        transition: $transition;
+        &:hover {
+          background-color: $section-color;
+        }
+      }
+    }
+  }
+}
+/* End Call US */
+
 /* Start Footer */
 .footer {
-    display: none;
+  @include boxShadow;
   position: relative;
   direction: rtl;
   background-color: $main-color;

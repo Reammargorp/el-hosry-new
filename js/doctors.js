@@ -166,7 +166,6 @@ menuSubmit.onclick = function (e) {
       }
     }
   }
-  console.log(addressLinkFour)
   addressLinkFive.onclick =function() {
     for(let i = 0 ; i < addressLinks.length ; i++) {
       addressLinks[i].classList.remove("active")
@@ -180,3 +179,52 @@ menuSubmit.onclick = function (e) {
     }
   }
 
+
+  var doctorList = document.getElementById("list");
+  
+  
+  
+  doctorList.onchange = function() {
+    var selectedValue = document.getElementById("list").value;
+    for(let i = 0 ; i < addressLinks.length ; i++) {
+      addressLinks[i].classList.remove("active")
+      addressLinkOne.classList.add("active")
+    }
+    if(selectedValue === "حدد العيادات") {
+      for(let i = 0 ; i < doctorBoxes.length; i++) {
+        doctorBoxes[i].style.display = "block"
+      }
+    }
+    if(selectedValue === "جراحه") {
+      for(let i = 0 ; i < doctorBoxes.length; i++) {
+        doctorBoxes[i].style.display = "none"
+        if(doctorBoxes[i].classList.contains("جراحه")) {
+          doctorBoxes[i].style.display = "flex"
+        }
+      }
+    }
+    if(selectedValue === "اسنان") {
+      for(let i = 0 ; i < doctorBoxes.length; i++) {
+        doctorBoxes[i].style.display = "none"
+        if(doctorBoxes[i].classList.contains("اسنان")) {
+          doctorBoxes[i].style.display = "flex"
+        }
+      }
+    }
+    if(selectedValue === "توليد") {
+      for(let i = 0 ; i < doctorBoxes.length; i++) {
+        doctorBoxes[i].style.display = "none"
+        if(doctorBoxes[i].classList.contains("توليد")) {
+          doctorBoxes[i].style.display = "flex"
+        }
+      }
+    }
+    if(selectedValue === "عيون") {
+      for(let i = 0 ; i < doctorBoxes.length; i++) {
+        doctorBoxes[i].style.display = "none"
+        if(doctorBoxes[i].classList.contains("عيون")) {
+          doctorBoxes[i].style.display = "flex"
+        }
+      }
+    }
+  }

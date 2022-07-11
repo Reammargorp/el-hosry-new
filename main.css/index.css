@@ -326,6 +326,8 @@ ul {
 /* End Header */
 /* Start Second Bar */
 .second-bar {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   position: relative;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -675,6 +677,8 @@ ul {
 /* End Landing */
 /* Start Mobile Second Bar */
 .mob-second-bar {
+  -webkit-box-shadow: 0 8px 50px rgba(5, 102, 57, 0.0509803922);
+          box-shadow: 0 8px 50px rgba(5, 102, 57, 0.0509803922);
   direction: rtl;
 }
 .mob-second-bar .container .navbar .navbar-brand img {
@@ -703,6 +707,9 @@ ul {
 .mob-second-bar .container .navbar .nav-item .nav-link.btn {
   background-color: #005fab;
   border-radius: 40px;
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0;
 }
 .mob-second-bar .container .navbar .nav-item .nav-link:hover {
   color: #709ea4;
@@ -1368,6 +1375,8 @@ ul {
 .footer {
   position: relative;
   direction: rtl;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   background-color: #3bb3a6;
   width: 100%;
   margin-bottom: -1.9%;

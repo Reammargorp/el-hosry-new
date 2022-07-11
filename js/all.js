@@ -1,13 +1,3 @@
-let slideOne = document.getElementById("slide-one");
-let slideTwo = document.getElementById("slide-two");
-
-console.log(slideOne)
-
-setInterval( () => { 
-  slideOne.classList.toggle("active")
-  slideTwo.classList.toggle("active")
-}, 5000)
-
 let closeBtn = document.querySelector(".search-close-btn button")
 
 closeBtn.onclick =function() {
