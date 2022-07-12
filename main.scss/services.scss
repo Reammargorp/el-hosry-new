@@ -552,114 +552,198 @@ ul {
   }
 }
 /* End Mobile Second Bar */
-/* Start Doctors */
-.doctors {
+/* Start Services*/
+.services {
   background-color: $section-color-two;
+  position: relative;
+  .special-title {
+    color: black;
+  }
+  .special-span-two {
+    background-color: #777;
+  }
   .container {
-    .title {
-      h2 {
-        @include breakpoints(small) {
-          text-align: center;
+
+    .row {
+      margin-bottom: 5%;
+      gap: 2rem;
+      display: flex;
+      @include flexCenter;
+      .card {
+        @include flexCenter;
+        background: $color-hover;
+        width: 100%;
+        max-width: 220px;
+        width: 100%;
+        transition: $transition;
+        a {
+        padding: 30px 20px;
+          
         }
-        margin-bottom: 3rem;
-        direction: rtl;
-        font-size: $font-size;
+        img {
+          width: 50%;
+          max-width: 180px;
+          margin: 0 auto;
+          display: block;
+        }
+        p {
+          text-align: center;
+          font-size: $font-size-small;
+          color: white;
+          font-weight: 500;
+        }
+        &:hover {
+          margin-top: -1%;
+        }
+      }
+    } 
+    .booking-btn {
+      @include flexCenter;
+      @include none;
+      transition: $transition;
+      background-color: $second-color;
+      width: 270px;
+      height: 80px;
+      margin: auto;
+      padding: 10px 20px;
+      border-radius: 5px;
+      &:hover {
+        svg {
+          padding-left: 15px;
+        }
+      }
+      button {
+        @include btnNone;
+          color: white;
+          font-weight: bolder;
+          transition: $transition;
+          font-size: $font-size;
+          svg {
+          transition: $transition;
+          padding-left: 10px;
+          }
       }
     }
-    .flex {
+    }
+  }
+/* End Services*/
+/* Start Ultra-Services */
+.ultra-services {
+  background-color: $section-color-two;
+  @include breakpoints(small) {
+    display: none;
+  }
+  .container {
+    height: fit-content;
+  background-color: $section-color-two;
+  .main-title {
+      margin-bottom: -3rem;
+    }
+    .row {
+      margin-bottom: 5%;
+      gap: 4rem;
       display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      @include breakpoints(small) {
-        flex-direction: column;
-      }
-        .address-links {
-          @include breakpoints(small) {
-            margin-bottom: 3rem;
-          }
-            ul {
-              display: flex;
-              flex-direction: row-reverse;
-              gap: 3rem;
-               li {
-                cursor: pointer;
-                transition: $transition;
-                padding-bottom: 1rem;
-                &.active  {
-                  border-bottom: 2px solid $main-color;
-                  color: $main-color;
-                }
-                &:hover {
-                  color: $main-color;
-                  border-bottom: 2px solid $main-color;
-                }
-               }
-            }
-        }
-        .doctors-list {
-          display: flex;
-          direction: rtl;
-          select {
-            width: 300px;
-            @include breakpoints(mobile) {
-              width: 250px;
-            }
-            font-size: $font-size-small;
-            font-weight: bolder;
-          }
-        }
-      }
-    .doctors-cards {
-      gap: 3rem;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      .doctor {
-        .doctor-box {
+      @include flexCenter;
+      .card {
+        @include flexCenter;
+        background: $color-hover;
+        width: 100%;
+        max-width: 220px;
+        width: 100%;
+        transition: $transition;
+        a {
+        padding: 30px 20px;
           
-          @include boxShadow;
-          @include flexCenter;
-          @include breakpoints(mobile) {
-            width: 100%;
-          }
-          padding: 25px 35px;
-          flex-direction: column;
-          text-align: center; 
-          width: 100%;
-          width: 255px;
-          height: 50vh;
-            img {
-              @include imgShadow;
-            }
-            .info {
-              .branch {
-                color: $main-color;
-                cursor: pointer;
-                svg {
-                  transition: $transition;
-                  padding-left: 3px;
-                }
-                &:hover {
-                  svg {
-                    padding-left: 6px;
-                  }
-                }
-  
-              }
-  
-            }
+        }
+        img {
+          width: 50%;
+          max-width: 180px;
+          margin: 0 auto;
+          display: block;
+        }
+        p {
+          text-align: center;
+          font-size: $font-size-small;
+          color: white;
+          font-weight: 500;
+        }
+        &:hover {
+          margin-top: -1%;
         }
       }
+    }
+    .icon-carousel-control-prev {
+      @include flexCenter;
+      svg {
+          color: $main-color;
+          transform: translateY(-25px);
+      }
+    }
+    .data-bs-target {
+      background-color: $main-color;
     }
   }
 }
-/* End Doctors */
-
-
+/* End Ultra-Services */
+/* Start Ultra-Services-mob */
+.ultra-services-mob {
+  display: none;
+  @include breakpoints(small) {
+    display: block;
+  }
+  background-color: $section-color-two;
+  .container {
+    .main-title {
+      margin-bottom: -3rem;
+    }
+    .row {
+      margin-bottom: 5%;
+      gap: 2rem;
+      display: flex;
+      @include flexCenter;
+      .card {
+        @include flexCenter;
+        background: $color-hover;
+        width: 100%;
+        max-width: 220px;
+        width: 100%;
+        transition: $transition;
+        a {
+        padding: 30px 20px;
+          
+        }
+        img {
+          width: 50%;
+          max-width: 180px;
+          margin: 0 auto;
+          display: block;
+        }
+        p {
+          text-align: center;
+          font-size: $font-size-small;
+          color: white;
+          font-weight: 500;
+        }
+        &:hover {
+          margin-top: -1%;
+        }
+      }
+    }
+    .icon-carousel-control-prev,
+    .icon-carousel-control-next {
+      @include flexCenter;
+      svg {
+          color: $main-color;
+          transform: translateY(-25px);
+      }
+    }
+    .indicators-btn {
+      background-color: $main-color;
+      margin-bottom: -4%;
+    }
+  }
+}
+/* End Ultra-Services-mob */
 /*Start Call Us*/
 .call {
   direction: rtl;
@@ -719,8 +803,9 @@ ul {
 
 /* Start Footer */
 .footer {
-  @include boxShadow;
+  
   position: relative;
+  @include boxShadow;
   direction: rtl;
   background-color: $main-color;
   width: 100%;

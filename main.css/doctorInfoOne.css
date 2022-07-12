@@ -329,6 +329,8 @@ ul {
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   position: relative;
+  margin-bottom: 1px;
+  z-index: 100;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -676,27 +678,27 @@ ul {
 
 /* End Landing */
 /* Start Mobile Second Bar */
-.second-bar-mobile {
-  -webkit-box-shadow: 0 8px 50px rgba(5, 102, 57, 0.0509803922);
-          box-shadow: 0 8px 50px rgba(5, 102, 57, 0.0509803922);
+.mob-second-bar {
+  position: relative;
+  margin-bottom: 2px;
   direction: rtl;
 }
-.second-bar-mobile .container .navbar .navbar-brand img {
+.mob-second-bar .container .navbar .navbar-brand img {
   width: 100%;
   max-width: 100px;
 }
-.second-bar-mobile .container .navbar .nav-item .nav-link {
+.mob-second-bar .container .navbar .nav-item .nav-link {
   padding: 8px 15px;
   color: #000;
   font-size: 13px;
   font-weight: bold;
 }
 @media (max-width: 991px) {
-  .second-bar-mobile .container .navbar .nav-item .nav-link {
+  .mob-second-bar .container .navbar .nav-item .nav-link {
     padding: 15px;
     border-bottom: 1px solid #709ea4;
   }
-  .second-bar-mobile .container .navbar .nav-item .nav-link.btn {
+  .mob-second-bar .container .navbar .nav-item .nav-link.btn {
     border: none;
     margin-top: 15px;
     width: -webkit-fit-content;
@@ -704,20 +706,20 @@ ul {
     width: fit-content;
   }
 }
-.second-bar-mobile .container .navbar .nav-item .nav-link.btn {
+.mob-second-bar .container .navbar .nav-item .nav-link.btn {
   background-color: #005fab;
   border-radius: 40px;
   width: 100%;
   text-align: center;
   margin: 2rem 0;
 }
-.second-bar-mobile .container .navbar .nav-item .nav-link:hover {
+.mob-second-bar .container .navbar .nav-item .nav-link:hover {
   color: #709ea4;
 }
-.second-bar-mobile .container .menu-search {
+.mob-second-bar .container .menu-search {
   width: 100%;
 }
-.second-bar-mobile .container .menu-search .menu-text {
+.mob-second-bar .container .menu-search .menu-text {
   background-color: transparent;
   border: none;
   outline: none;
@@ -726,7 +728,7 @@ ul {
   width: 100%;
   border-bottom: 1px solid #709ea4;
 }
-.second-bar-mobile .container .menu-search .menu-submit {
+.mob-second-bar .container .menu-search .menu-submit {
   -webkit-transform: translate(-8px, -38px);
           transform: translate(-8px, -38px);
   cursor: pointer;
@@ -741,12 +743,6 @@ ul {
 /* Start DoctorInfo */
 .doctor-info {
   background-color: #f5f9f7;
-}
-@media (max-width: 991px) {
-  .doctor-info {
-    -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  }
 }
 .doctor-info .container .back {
   direction: rtl;

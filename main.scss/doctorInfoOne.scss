@@ -223,16 +223,16 @@ ul {
 .second-bar {
   @include boxShadow;
   position: relative;
+  margin-bottom: 1px;
+  z-index: 100;
   height: fit-content;
   direction: rtl;
 @include breakpoints(small){ 
   display: none;
 }
   .main-menu {
-    
     .container {
-
-      .row {
+      .row {  
         .nav-link {
           .nav {
             li {
@@ -490,8 +490,9 @@ ul {
 }
 /* End Landing */
 /* Start Mobile Second Bar */
-.second-bar-mobile {
-  box-shadow: 0 8px 50px #0566390d;
+.mob-second-bar {
+  position: relative;
+  margin-bottom: 2px;
   direction: rtl;
   .container {
 
@@ -554,9 +555,6 @@ ul {
 /* Start DoctorInfo */
   .doctor-info {
   background-color: $section-color-two;
-    @include breakpoints(small) {
-      @include boxShadow;
-    }
     .container {
       .back {
         direction: rtl;

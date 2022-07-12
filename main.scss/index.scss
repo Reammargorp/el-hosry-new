@@ -223,16 +223,16 @@ ul {
 .second-bar {
   @include boxShadow;
   position: relative;
+  margin-bottom: 1px;
+  z-index: 100;
   height: fit-content;
   direction: rtl;
 @include breakpoints(small){ 
   display: none;
 }
   .main-menu {
-    
     .container {
-
-      .row {
+      .row {  
         .nav-link {
           .nav {
             li {
@@ -491,7 +491,8 @@ ul {
 /* End Landing */
 /* Start Mobile Second Bar */
 .mob-second-bar {
-  box-shadow: 0 8px 50px #0566390d;
+  position: relative;
+  margin-bottom: 2px;
   direction: rtl;
   .container {
 
