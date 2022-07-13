@@ -602,85 +602,71 @@ ul {
   }
 }
 /* End Mobile Second Bar */
-
-
-/* Start Slider */
-.slider {
-    @include boxShadow;
-    z-index: 100;
-    .slide-one {
-      transition: $transition;
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-      }
-    }
-    .slide-two {
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-
-      }
-    }
-}
-/* End Slider */
-/* Start Branch */
-.branch-info {
+/* Start Articles */
+.article-info {
   background-color: $section-color-two;
-  .container {
-    .location {
-      display: flex;
+    .container {
+
+
+      .back {
+        direction: rtl;
+
+        margin: 1rem auto -3rem auto;
+                svg {
+          border-radius: 50%;
+          background-color:#f5f9f7;
+          font-size: $font-size;
+          padding: 15px 20px;
+          color: black;
+        }
+      }
+
+      .main-title {
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+      }
       direction: rtl;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      .icon {
-        margin: 0px auto -20px auto;  
-        background-color: $section-color-two;
-        z-index: 1000;
-        svg {
-          color: $second-color;
-          font-size: calculate($font-size , 5);
-          padding: 10px;
-          }
+      .article-box {
+        img {
+        max-width: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 20px;
+        @include boxShadow;
       }
-      .title {
-        text-align: center;
-        font-size: $font-size-alt;
-        padding: 20px 30px;
+      .article-title {  
+        margin: 3rem auto;
         width: 100%;
-        border-radius: 50px 0;
-        color: $second-color;
-        border: 1px solid $second-color;
+        background-color: #eeeeee;
+        font-size: $font-size;
+        padding: 10px;
+        direction: rtl;
+        border-right: 3px solid $section-color;
+      }
+      .article-text {
+        $font-size :$font-size-alt;
+        font-weight: bolder;
+        color: black;
+      }
+      }
+      .share {
+        margin: 5rem auto 0rem auto;
+        font-size: $font-size;
+        font-weight: bolder;
+        @include flexCenter;
+      }
+      .addthis {
+        direction: rtl;
+        @include flexCenter;
+        margin: 3rem auto 0rem auto;
       }
     }
-    iframe {
-      margin: 5rem auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      border-radius: 30px ;
-      @include boxShadow;
-    }
-  }
 }
-/* End Branch */
-/*Start Call Us*/
+/* End Articles */
+/* Start Call Us*/
 .call {
   direction: rtl;
   background-color: $section-color-two;

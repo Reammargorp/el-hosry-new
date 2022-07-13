@@ -602,85 +602,95 @@ ul {
   }
 }
 /* End Mobile Second Bar */
-
-
-/* Start Slider */
-.slider {
-    @include boxShadow;
-    z-index: 100;
-    .slide-one {
-      transition: $transition;
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-      }
-    }
-    .slide-two {
-      display: none;
-      opacity: 0;
-
-      img {
-        width: 100%;
-        max-width: 100%;
-      }
-      &.active {
-        display: block;
-        opacity: 1;
-
-      }
-    }
-}
-/* End Slider */
-/* Start Branch */
-.branch-info {
+/* Start Articles */
+.articles {
   background-color: $section-color-two;
-  .container {
-    .location {
-      display: flex;
-      direction: rtl;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      .icon {
-        margin: 0px auto -20px auto;  
-        background-color: $section-color-two;
-        z-index: 1000;
-        svg {
-          color: $second-color;
-          font-size: calculate($font-size , 5);
-          padding: 10px;
-          }
+    .container {
+      .main-title {
+        margin-bottom: -5rem;
+        margin-top: 5rem;
       }
-      .title {
-        text-align: center;
-        font-size: $font-size-alt;
-        padding: 20px 30px;
-        width: 100%;
-        border-radius: 50px 0;
-        color: $second-color;
-        border: 1px solid $second-color;
-      }
+        .article-box {
+            @include breakpoints(small) {
+                flex-direction: column;
+                text-align: center;
+            }
+            direction: rtl;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 5rem;
+            border-bottom: 1px solid gray;
+            padding: 5rem  0;
+
+            a {
+                width: 30%;
+                img {
+                    max-width: 100%;
+                    border-radius: 20px;
+                    @include boxShadow;
+                }
+            }
+            .column {
+                display: flex;
+                flex-direction: column;
+                @include breakpoints(small) {
+                    @include flexCenter;
+                    text-align: center;
+                }
+                gap: 2rem;
+                .read-more {
+                    margin-top: 2rem;
+                    a {
+                        text-align: center;
+                        background-color: $section-color;
+                        padding: 10px 15px;
+                        border-radius: 10px;
+                        color: white;
+                        &:hover {
+                            svg {
+                                padding-right: 12px;
+                            }
+                        }
+                        svg {
+                            padding-right: 8px;
+                            transition: $transition;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .page {
+            direction: rtl;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            padding: 3rem  0;
+            margin-bottom: -3rem;
+            @include breakpoints(medium) {
+            justify-content: center;
+            }
+            a {
+            padding: 0px 15px;
+            font-weight: bolder;
+            border: 1px solid #d8dde3;
+            color: #333;
+            display: flex;
+            align-items: center;
+            &.active {
+                background: #006cb4;
+                color: white;
+                background: #006cb4;
+                padding: 5px 15px;
+            }
+            }
+        }
     }
-    iframe {
-      margin: 5rem auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      border-radius: 30px ;
-      @include boxShadow;
-    }
-  }
 }
-/* End Branch */
-/*Start Call Us*/
+/* End Articles */
+/* Start Call Us*/
 .call {
   direction: rtl;
   background-color: $section-color-two;
