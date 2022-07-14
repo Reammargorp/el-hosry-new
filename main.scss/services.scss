@@ -489,7 +489,6 @@ ul {
   }
 }
 /* End Landing */
-/* Start Mobile Second Bar */
 .mob-second-bar {
   position: relative;
   margin-bottom: 2px;
@@ -499,7 +498,7 @@ ul {
     .navbar {
       .navbar-brand {
         img {
-          width: 100%;
+          width: 60%;
           max-width: 100px;
         }
       }
@@ -552,6 +551,43 @@ ul {
   }
 }
 /* End Mobile Second Bar */
+/* Start Info */
+.info-section {
+  background-image: url("/imgs/info-img.webp");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  min-height: 300px;
+  .container {
+      .info-title {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          min-height: 300px;
+          .column {
+          direction: rtl;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          .name {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+          }
+          .info-btn {
+            background-color: $second-color;
+            padding: 10px  15px;
+            color: white;
+            font-size: $font-size-alt;
+            width: fit-content;
+            border-radius: 10px;
+          }
+          }
+      }
+  }
+}
+/* End Info */
 /* Start Services*/
 .services {
   background-color: $section-color-two;

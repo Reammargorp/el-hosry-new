@@ -745,13 +745,14 @@ ul {
 }
 
 /* End Landing */
+/* Start Mobile Second Bar */
 .mob-second-bar {
   position: relative;
   margin-bottom: 2px;
   direction: rtl;
 }
 .mob-second-bar .container .navbar .navbar-brand img {
-  width: 60%;
+  width: 660%;
   max-width: 100px;
 }
 .mob-second-bar .container .navbar .nav-item .nav-link {
@@ -859,16 +860,33 @@ ul {
 }
 
 /* End Info */
-/* Start Articles */
-.articles {
+/* Start about */
+.about {
   background-color: #f5f9f7;
 }
-.articles .container .main-title {
-  margin-bottom: -5rem;
-  margin-top: 5rem;
+.about .container .about-box img {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 20px;
+  max-width: 100%;
+  width: 50%;
 }
-.articles .container .article-box {
-  direction: rtl;
+@media (max-width: 991px) {
+  .about .container .about-box img {
+    width: 70%;
+  }
+}
+.about .container .about-box .name {
+  font-size: 25px;
+  color: #3bb3a6;
+  font-weight: bolder;
+}
+.about .container .about-box .describe {
+  margin-top: 2rem;
+  line-height: 2 !important;
+}
+.about .container .about-box .style-box {
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -883,11 +901,10 @@ ul {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 5rem;
-  border-bottom: 1px solid gray;
-  padding: 5rem 0;
+  direction: rtl;
 }
 @media (max-width: 991px) {
-  .articles .container .article-box {
+  .about .container .about-box .style-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -895,101 +912,20 @@ ul {
     text-align: center;
   }
 }
-.articles .container .article-box a {
-  width: 30%;
-}
-.articles .container .article-box a img {
-  max-width: 100%;
-  border-radius: 20px;
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-.articles .container .article-box .column {
+.about .container .about-box .goals {
+  direction: ltr;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
+  text-align: end !important;
 }
 @media (max-width: 991px) {
-  .articles .container .article-box .column {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+  .about .container .about-box .goals {
+    text-align: center !important;
   }
-}
-.articles .container .article-box .column .read-more {
-  margin-top: 2rem;
-}
-.articles .container .article-box .column .read-more a {
-  text-align: center;
-  background-color: #005fab;
-  padding: 10px 15px;
-  border-radius: 10px;
-  color: white;
-}
-.articles .container .article-box .column .read-more a:hover svg {
-  padding-right: 12px;
-}
-.articles .container .article-box .column .read-more a svg {
-  padding-right: 8px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.articles .container .page {
-  direction: rtl;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 3rem 0;
-  margin-bottom: -3rem;
-}
-@media (max-width: 1199px) {
-  .articles .container .page {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-.articles .container .page a {
-  padding: 0px 15px;
-  font-weight: bolder;
-  border: 1px solid #d8dde3;
-  color: #333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.articles .container .page a.active {
-  background: #006cb4;
-  color: white;
-  background: #006cb4;
-  padding: 5px 15px;
 }
 
-/* End Articles */
+/* End about */
 /* Start Call Us*/
 .call {
   direction: rtl;

@@ -186,35 +186,28 @@ ul {
       }
     }
     .info-top-bar {
-      direction: rtl;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      font-size: $font-size-small;
-      color: #fff;
-      transition: $transition;
-      .tel-top-bar {
-      margin-left: 15px;
-      font-weight: bold;
-      font-size: calculate( $font-size-small , 3);
-      color: #fff;
-      transition: $transition;
+    direction: rtl;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    a {
+    color: white;
+    font-size: 15px;
+    &.clock {
+      cursor: auto; 
       &:hover {
-        color: $color-hover;
+        text-decoration: None;
       }
-      }
-      .social-top-bar {
-        margin-right: 15px;
-
-        a {
-          margin-right: 10px;
-          color: #fff;
-          transition: $transition;
-          &:hover {
-            color: $color-hover;
-          }
-        }
-      }
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    svg {
+      font-size: 15px;
+      color : white;
+      padding-right: 5px
+    }
+    }
     }
   }
 }
@@ -252,16 +245,13 @@ ul {
           }
         }
         .booking {
-          height: 100%;
-          width: 100%;
-          max-width: 130px;
-          display: block;
-          background: $second-color;
-          color: #ffffff;
-          font-weight: bolder;
-          text-align: center;
-          line-height: 90px;
-          font-size: $font-size-alt;
+          @include flexCenter;
+          color: white;
+          font-size: 15px;
+          background-color: $second-color;
+          padding: 15px 18px;
+          border-radius: 8px;
+          font-weight: bold;
         }
       }
     }
@@ -395,7 +385,7 @@ ul {
     &.active {
       width: 100%;
       height: 100vh;
-      z-index: 10;
+      z-index: 1000;
       right: 0%;
       top: 0%;
     }
@@ -499,7 +489,7 @@ ul {
     .navbar {
       .navbar-brand {
         img {
-          width: 100%;
+          width: 70%;
           max-width: 100px;
         }
       }

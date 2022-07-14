@@ -718,14 +718,13 @@ ul {
 }
 
 /* End Landing */
-/* Start Mobile Second Bar */
 .mob-second-bar {
   position: relative;
   margin-bottom: 2px;
   direction: rtl;
 }
 .mob-second-bar .container .navbar .navbar-brand img {
-  width: 100%;
+  width: 60%;
   max-width: 100px;
 }
 .mob-second-bar .container .navbar .nav-item .nav-link {
@@ -781,6 +780,58 @@ ul {
 }
 
 /* End Mobile Second Bar */
+/* Start Info */
+.info-section {
+  background-image: url("/imgs/info-img.webp");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  min-height: 300px;
+}
+.info-section .container .info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 300px;
+}
+.info-section .container .info-title .column {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.info-section .container .info-title .column .name {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+.info-section .container .info-title .column .info-btn {
+  background-color: #f57410;
+  padding: 10px 15px;
+  color: white;
+  font-size: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+/* End Info */
 /* Start Branch */
 .branch {
   background-color: #f5f9f7;
