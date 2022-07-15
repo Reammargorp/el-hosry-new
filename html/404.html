@@ -10,7 +10,7 @@
         <!-- Font Awsome -->
         <link rel="stylesheet" href="../css/all.min.css">
         <!-- Css File -->
-        <link rel="stylesheet" href="../main.css/contact.css">
+        <link rel="stylesheet" href="../main.css/404.css">
         <!-- Google Fontds -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,83 +160,25 @@
             <div class="container">
                 <div class="info-title">
                     <div class="column">
-                        <h3 class="name">احجز موعدك</h3>
+                        <h3 class="name">لا توجد نتائج</h3>
                         <a href="./contact.html" class="info-btn">حجز موعد</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Info -->
-        <!-- Start Contact -->
-        <div class="contact">
-            <div class="container">
-              <div class="main-title">
-                <div class="special-title"></div>
-              </div>
-                <div class="row">
-                    <div class="col-lg-3 image">
-                        <img src="../imgs/hosry-arabic.png" alt="">
-                    </div>
-                    <div class="col-lg-9 form">
-                        <div class="form" action="https://formsubmit.co/yassienwyh0@gmail.com" method="POST" >
-                          <div class="row-box">
-                            <!-- Name -->
-                            <div class="label-column">
-                              <label for="fullname">برجاء كتابة الإسم ثلاثي</label>
-                              <input type="text" name="fullname" id="fullname" required placeholder="fullname">
-                            </div>
-                            <!-- Email -->
-                            <div class="label-column">
-                              <label for="email">برجاء إدخال البريد الإلكترزني</label>
-                              <input type="email" name="email" id="email" placeholder="email" required>
-                            </div>
-                          </div>
-                          <div class="row-box">
-                            <!-- phone -->
-                            <div class="label-column">
-                              <label for="phone">برجاء إدخال رقم الهاتف</label>
-                              <input type="number" name="phone" id="phone" value="+20" placeholder="phone Number" required>
-                            </div>
-                            <!-- clinics -->
-                            <div class="label-column">
-                              <label for="clinics">برجاء إختيار التخصص المناسب لحالتك</label>
-                              <select name="clinics" id="clinics">
-                                  <option value="برجاء إختيار التخصص المناسب لحالتك">برجاء إختيار التخصص المناسب لحالتك</option>
-                                  <option value="الباطنة العامة">الباطنة العامة</option>
-                                  <option value="أمراض الدم">أمراض الدم</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="row-box">
-                            <!-- doctor -->
-                            <div class="label-column">
-                              <label for="doctor">برجاء إختيار الطبيب</label>
-                              <select name="doctor" id="docotr" aria-placeholder="برجاء إختيار الطبيب">
-                                  <option value="برجاء إختيار الطبيب">برجاء إختيار الطبيب</option>
-                                  <option value=".د عبد المجيد رمزي">.د عبد المجيد رمزي</option>
-                                  <option value="أ.د عمرو حسان مصطفى">أ.د عمرو حسان مصطفى</option>
-                                  <option value="أ. نادية حتحوت">أ. نادية حتحوت</option>
-                              </select>
-                            </div>
-                          <!-- branch -->
-                          <div class="label-column">
-                            <label for="branch">اختر الفرع الاقرب لك</label>
-                            <select name="branch" id="branch">
-                              <option value="اكتوبر 1">اكتوبر 1</option>
-                              <option value="اكتوبر 2">اكتوبر 2</option>
-                              <option value="المهندسين">المهندسين</option>
-                              <option value="حدائق اكتوبر">حدائق اكتوبر</option>
-                            </select>
-                          </div>
-                          </div>
-                          <input type="submit" name="submit" id="submit" value="Submit">
-                        </div>
-                    </div>
+        <!-- Start result -->
+        <div class="result pt-5 pb-5">
+            <div class="container pt-5 pb-5">
+                <h1 class="not-found">لا نوجد نتائج</h1>
+                <p>للأسف لا شيء يطابق شروط البحث الخاصة بك. أرجو المحاولة مرة أخرى بإستخدام كلمات أخرى.</p>
+                <div class="result-search">
+                    <input type="text" name="" id="result-search-bar" placeholder="Enter Keyword">
+                    <div class="submit result-search-submit" id="result-search-submit"><i class="fas fa-search"></i></div>
                 </div>
-
             </div>
         </div>
-        <!-- End Contact -->
+        <!-- End result -->
         <!-- End Branch -->
         <!-- Start call us -->
         <div class="call pb-5" id="call">
@@ -345,7 +287,65 @@
         <script src="../js/bootstrap.bundle.min.js"></script>
         <!-- Font Awsome -->
         <script src="../js/all.min.js"></script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62ce8c4ca054425b"></script>
+        <script>
+var resultSearchBar = document.getElementById("result-search-bar")
+var resultSearchSubmit = document.getElementById("result-search-submit")
+resultSearchSubmit.onclick = function (e) {
+for(let s = 0; s < serviceSearch.length ; s++) {
+    if (resultSearchBar.value == serviceSearch[s]) {
+       open("./services.html" ,"")
+    }
+}
+for(let a = 0; a < articleSearch.length ; a++) {
+    if (resultSearchBar.value == articleSearch[a]) {
+       open("./articles.html" ,"")
+    }
+}
+for(let c = 0; c < contractsSearch.length ; c++) {
+    if (resultSearchBar.value == contractsSearch[c]) {
+       open("./contracts.html" ,"")
+    }
+}
+for(let b = 0; b < branchSearch.length ; b++) {
+    if (resultSearchBar.value == branchSearch[b]) {
+       open("./branch.html" ,"")
+    }
+}
+for(let d = 0; d < doctorsSearch.length ; d++) {
+    if (resultSearchBar.value == doctorsSearch[d]) {
+       open("./doctors.html" ,"")
+    }
+}
+for(let j = 0; j < jobsSearch.length ; j++) {
+    if (resultSearchBar.value == jobsSearch[j]) {
+       open("./jobs.html" ,"")
+    }
+}
+for(let o = 0; o < aboutSearch.length ; o++) {
+    if (resultSearchBar.value == aboutSearch[o]) {
+       open("./about.html" ,"")
+    }
+}
+for(let i = 0; i < indexSearch.length ; i++) {
+    if (resultSearchBar.value == indexSearch[i]) {
+       open("/index.html" ,"")
+    }
+}
+for(let p = 0; p < bookSearch.length ; p++) {
+    if (resultSearchBar.value == bookSearch[p]) {
+       open("./book.html" ,"")
+    }
+}
+for(let r = 0; r < drWaleedSearch.length ; r++) {
+    if (resultSearchBar.value == drWaleedSearch[r]) {
+       open("./doctorWaleedInfo.html" ,"")
+    }
+}
+if (resultSearchBar.value == "") {
+  open("./404.html")
+}
+}
 
+        </script>
 </body>
 </html>

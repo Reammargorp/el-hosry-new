@@ -830,6 +830,9 @@ ul {
 .info-section {
   background-image: url("/imgs/info-img.webp");
   background-repeat: no-repeat;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  margin-bottom: 1px;
   background-position: 50%;
   background-size: cover;
   min-height: 300px;
@@ -1117,7 +1120,10 @@ ul {
 .contact {
   direction: rtl;
 }
-.contact .container .row {
+.contact .container .main-title div {
+  font-size: 25px !important;
+}
+.contact .container .row-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1132,11 +1138,25 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-.contact .container .row .image img {
+@media (max-width: 991px) {
+  .contact .container .row-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+.contact .container .row-box .image img {
   max-width: 100%;
   width: 100%;
 }
-.contact .container .row .form {
+@media (max-width: 991px) {
+  .contact .container .row-box .image img {
+    margin-bottom: 2rem;
+  }
+}
+.contact .container .row-box form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,7 +1166,7 @@ ul {
           flex-direction: column;
   gap: 3rem;
 }
-.contact .container .row .form .row-box {
+.contact .container .row-box form .row-box {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1157,7 +1177,15 @@ ul {
           flex-direction: row;
   gap: 2rem;
 }
-.contact .container .row .form .row-box .label-column {
+@media (max-width: 991px) {
+  .contact .container .row-box form .row-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.contact .container .row-box form .row-box .label-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1165,44 +1193,67 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 170%;
 }
-.contact .container .row .form .row-box .label-column input {
+@media (max-width: 991px) {
+  .contact .container .row-box form .row-box .label-column {
+    margin-bottom: 2rem;
+  }
+}
+.contact .container .row-box form .row-box .label-column input {
+  background-color: transparent;
+  border: none;
+  outline: none;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 1rem;
 }
-.contact .container .row .form .row-box .label-column input::-webkit-input-placeholder {
+.contact .container .row-box form .row-box .label-column input::-webkit-input-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.contact .container .row .form .row-box .label-column input::-moz-placeholder {
+.contact .container .row-box form .row-box .label-column input::-moz-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.contact .container .row .form .row-box .label-column input:-ms-input-placeholder {
+.contact .container .row-box form .row-box .label-column input:-ms-input-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.contact .container .row .form .row-box .label-column input::-ms-input-placeholder {
+.contact .container .row-box form .row-box .label-column input::-ms-input-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.contact .container .row .form .row-box .label-column input::placeholder {
+.contact .container .row-box form .row-box .label-column input::placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.contact .container .row .form .row-box .label-column label {
+.contact .container .row-box form .row-box .label-column label {
   font-size: 15px;
   font-weight: bolder;
   padding-bottom: 1rem;
 }
-.contact .container .row .form .row-box .label-column select option {
+.contact .container .row-box form .row-box .label-column select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  padding-bottom: 1rem;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #757575;
+}
+.contact .container .row-box form .row-box .label-column select option {
+  color: #757575;
   font-size: 15px;
   font-weight: bolder;
 }
-.contact .container .row .form #submit {
+.contact .container .row-box form #submit {
   background-color: transparent;
   border: none;
   outline: none;

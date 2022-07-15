@@ -10,7 +10,7 @@
         <!-- Font Awsome -->
         <link rel="stylesheet" href="../css/all.min.css">
         <!-- Css File -->
-        <link rel="stylesheet" href="../main.css/doctors.css">
+        <link rel="stylesheet" href="../main.css/contact.css">
         <!-- Google Fontds -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,117 +160,87 @@
             <div class="container">
                 <div class="info-title">
                     <div class="column">
-                        <h3 class="name">اطبائنا</h3>
+                        <h3 class="name">احجز موعدك</h3>
                         <a href="./contact.html" class="info-btn">حجز موعد</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Info -->
-        <!-- Start Doctors -->
-        <div class="doctors pt-5 pb-5">
-            <div class="container pb-5">
-                    <div class="title">
-                        <h2 class="fw-bold">الاطباء</h2>
+        <!-- Start Contact -->
+        <div class="contact pt-5 pb-5">
+            <div class="container pt-5 pb-5">
+              <div class="main-title">
+                <div class="fw-bold fs-1 text-center mb-5">احجز موعدك الان</div>
+              </div>
+                <div class="row-box">
+                    <div class="col-lg-2 image">
+                        <img src="../imgs/hosry-arabic.png" alt="">
                     </div>
-                    <div class="flex">
-                      <div class="address-links">
-                          <ul>
-                              <li class="all  fs-3 active">الكل</li>
-                              <li class="all2 fs-3">الشيخ زايد</li>
-                              <li class="all3 fs-3">اكتوبر</li>
-                              <li class="all4 fs-3">القاهره</li>
-                              <li class="all5 fs-3">الجيزه</li>
-                          </ul>
-      
-                      </div>
-                      <div class="doctors-list">
-                        <select name="" id="list" class="doctors-list-js">
-                            <option value="حدد العيادات">حدد العيادات</option>
-                            <option value="جراحه" class="doctor-list-name">جراحه</option>
-                            <option value="توليد" class="doctor-list-name">توليد</option>
-                            <option value="عيون" class="doctor-list-name">عيون</option>
-                            <option value="اسنان" class="doctor-list-name">اسنان</option>
-                        </select>
-                      </div>
-                    </div>
-                <div class="doctors-cards pt-5 pb-5 mt-5">
-                    <a href="doctorInfoOne.html" class="doctor">
-                        <div class="doctor-box zayed جراحه">
-                            <img src="../imgs/preofile.png" alt="">
-                            <div class="info">
-                                <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر جراحه</h3>
-                                <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                                <h4 class="branch mt-4 fs-3 fw-bold">الشيخ زايد <i class="fa-solid fa-location-dot"></i></h4>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="doctorInfoOne.html" class="doctor">
-                      <div class="doctor-box zayed اسنان">
-                        <img src="../imgs/preofile.png" alt="">
-                        <div class="info">
-                            <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر اسنان</h3>
-                            <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                            <h4 class="branch mt-4 fs-3 fw-bold">الشيخ زايد <i class="fa-solid fa-location-dot"></i></h4>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-9 form">
+                      <form action="https://formsubmit.co/yassienwyh0@gmail.com" method="POST">                       
+                          <div class="row-box">
+                            <!-- Name -->
+                            <div class="label-column">
+                              <!-- <label for="fullname">برجاء كتابة الإسم ثلاثي</label> -->
+                              <input type="text" name="fullname" id="fullname" required placeholder="الاسم الكامل">
+                            </div>
+                            <!-- Email -->
+                            <div class="label-column">
+                              <!-- <label for="email">برجاء إدخال البريد الإلكترزني</label> -->
+                              <input type="email" name="email" id="email" placeholder="البريد الاكتروني" required>
+                            </div>
+                          </div>
+                          <div class="row-box">
+                            <!-- phone -->
+                            <div class="label-column">
+                              <!-- <label for="phone">برجاء إدخال رقم الهاتف</label> -->
+                              <input type="text" name="phone" id="phone" placeholder="رقم الهاتف" required>
+                            </div>
+                            <!-- clinics -->
+                            <div class="label-column">
+                              <!-- <label for="clinics">برجاء إختيار التخصص المناسب لحالتك</label> -->
+                              <select name="clinics" id="clinics">
+                                  <option value="التخصص">التخصص</option>
+                                  <option value="الباطنة العامة">الباطنة العامة</option>
+                                  <option value="أمراض الدم">أمراض الدم</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="row-box">
+                            <!-- doctor -->
+                            <div class="label-column">
+                              <!-- <label for="doctor">برجاء إختيار الطبيب</label> -->
+                              <select name="doctor" id="docotr" aria-placeholder="برجاء إختيار الطبيب">
+                                  <option value="برجاء إختيار الطبيب">برجاء إختيار الطبيب</option>
+                                  <option value=".د عبد المجيد رمزي">.د عبد المجيد رمزي</option>
+                                  <option value="أ.د عمرو حسان مصطفى">أ.د عمرو حسان مصطفى</option>
+                                  <option value="أ. نادية حتحوت">أ. نادية حتحوت</option>
+                              </select>
+                            </div>
+                          <!-- branch -->
+                          <div class="label-column">
+                            <!-- <label for="branch">اختر الفرع الاقرب لك</label> -->
+                            <select name="branch" id="branch">
+                              <option value="اكتوبر 1">اكتوبر 1</option>
+                              <option value="اكتوبر 2">اكتوبر 2</option>
+                              <option value="المهندسين">المهندسين</option>
+                              <option value="حدائق اكتوبر">حدائق اكتوبر</option>
+                            </select>
+                          </div>
+                          </div>
+                          <input type="submit" id="submit">
+                        </form>
                     </div>
                 </div>
-                    </a>
-                    <a href="doctorInfoOne.html" class="doctor">
-                        <div class="doctor-box october توليد">
-                            <img src="../imgs/preofile.png " alt="">
-                            <div class="info">
-                                <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر توليج</h3>
-                                <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                                <h4 class="branch mt-4 fs-3 fw-bold">اكتوبر<i class="fa-solid fa-location-dot"></i></h4>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="doctorInfoOne.html" class="doctor">
-                        <div class="doctor-box cairo zayed اسنان">
-                            <img src="../imgs/preofile.png" alt="">
-                            <div class="info">
-                                <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر اسنان</h3>
-                                <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                                <h4 class="branch mt-4 fs-3 fw-bold">القاهره و الشيخ زايد<i class="fa-solid fa-location-dot"></i></h4>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="doctorInfoOne.html" class="doctor">
-                        <div class="doctor-box cairo عيون">
-                            <img src="../imgs/preofile.png" alt="">
-                            <div class="info">
-                                <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر عيون</h3>
-                                <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                                <h4 class="branch mt-4 fs-3 fw-bold">القاهره<i class="fa-solid fa-location-dot"></i></h4>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="doctorInfoOne.html" class="doctor">
-                        <div class="doctor-box giza عيون">
-                            <img src="../imgs/preofile.png" alt="">
-                            <div class="info">
-                                <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر عيون</h3>
-                                <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                                <h4 class="branch mt-4 fs-3 fw-bold">جيزه<i class="fa-solid fa-location-dot"></i></h4>
-                        </div>
-                    </div>
-                    </a>
-                    <a href="doctorInfoOne.html" class="doctor">
-                        <div class="doctor-box giza">
-                            <img src="../imgs/preofile.png" alt="">
-                            <div class="info">
-                                <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عبدالقادر حراحه</h3>
-                                <h4 class="describe mt-4 text-black-50 lh-lg fw-bold">أستاذ دكتور الباطنة العامة وأمراض الدم جامعة القاهرة</h4>
-                                <h4 class="branch mt-4 fs-3 fw-bold">جيزه<i class="fa-solid fa-location-dot"></i></h4>
-                        </div>
-                    </div>
-                    </a>
-                </div>
+
+            </div>
         </div>
-        
-        <!-- End Doctors -->
+        <!-- End Contact -->
+        <!-- End Branch -->
         <!-- Start call us -->
-        <div class="call pt-5 pb-5" id="call">
+        <div class="call pb-5" id="call">
         <div class="container">
         <div class="call-box">
         <h2 class="fs-1">تواصل معنا لازاله آلامك<p class="fs-3">لا تترد في الاستفسار عن اي شئ</p></h2>
@@ -376,129 +346,7 @@
         <script src="../js/bootstrap.bundle.min.js"></script>
         <!-- Font Awsome -->
         <script src="../js/all.min.js"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62ce8c4ca054425b"></script>
 
-        <script>
-          
-  let addressLinkOne   = document.querySelector(".all")
-  let addressLinkTwo   = document.querySelector(".all2")
-  let addressLinkThree = document.querySelector(".all3")
-  let addressLinkFour  = document.querySelector(".all4")
-  let addressLinkFive  = document.querySelector(".all5")
-  let addressLinks     = document.querySelectorAll(".address-links ul li")
-  let doctorBoxes      = document.querySelectorAll(".doctor-box")
-  let doctros          = document.querySelectorAll(".doctor")
-
-  
-  console.log(doctorBoxes[3].classList.contains("col-lg-3"))
- 
-  addressLinkOne.onclick =function() {
-    for(let i = 0 ; i < addressLinks.length ; i++) {
-      addressLinks[i].classList.remove("active")
-      addressLinkOne.classList.add("active")
-    }
-    for(let i = 0 ; i < doctorBoxes.length; i++) {
-      doctorBoxes[i].style.display = "flex"
-    }
-  }
-  addressLinkTwo.onclick =function() {
-    for(let i = 0 ; i < addressLinks.length ; i++) {
-      addressLinks[i].classList.remove("active")
-      addressLinkTwo.classList.add("active")
-    }
-    for(let i = 0 ; i < doctorBoxes.length; i++) {
-      doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("zayed")) {
-        doctorBoxes[i].style.display = "flex"
-      }
-    }
-  }
-  addressLinkThree.onclick =function() {
-    for(let i = 0 ; i < addressLinks.length ; i++) {
-      addressLinks[i].classList.remove("active")
-      addressLinkThree.classList.add("active")
-    }
-    for(let i = 0 ; i < doctorBoxes.length; i++) {
-      doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("october")) {
-        doctorBoxes[i].style.display = "flex"
-      }
-    }
-  }
-  addressLinkFour.onclick =function() {
-    for(let i = 0 ; i < addressLinks.length ; i++) {
-      addressLinks[i].classList.remove("active")
-      addressLinkFour.classList.add("active")
-    }
-    for(let i = 0 ; i < doctorBoxes.length; i++) {
-      doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("cairo")) {
-        doctorBoxes[i].style.display = "flex"
-      }
-    }
-  }
-  addressLinkFive.onclick =function() {
-    for(let i = 0 ; i < addressLinks.length ; i++) {
-      addressLinks[i].classList.remove("active")
-      addressLinkFive.classList.add("active")
-    }
-    for(let i = 0 ; i < doctorBoxes.length; i++) {
-      doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("giza")) {
-        doctorBoxes[i].style.display = "flex"
-      }
-    }
-  }
-
-
-  var doctorList = document.getElementById("list");
-  
-  
-  
-  doctorList.onchange = function() {
-    var selectedValue = document.getElementById("list").value;
-    for(let i = 0 ; i < addressLinks.length ; i++) {
-      addressLinks[i].classList.remove("active")
-      addressLinkOne.classList.add("active")
-    }
-    if(selectedValue === "حدد العيادات") {
-      for(let i = 0 ; i < doctorBoxes.length; i++) {
-        doctorBoxes[i].style.display = "block"
-      }
-    }
-    if(selectedValue === "جراحه") {
-      for(let i = 0 ; i < doctorBoxes.length; i++) {
-        doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("جراحه")) {
-          doctorBoxes[i].style.display = "flex"
-        }
-      }
-    }
-    if(selectedValue === "اسنان") {
-      for(let i = 0 ; i < doctorBoxes.length; i++) {
-        doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("اسنان")) {
-          doctorBoxes[i].style.display = "flex"
-        }
-      }
-    }
-    if(selectedValue === "توليد") {
-      for(let i = 0 ; i < doctorBoxes.length; i++) {
-        doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("توليد")) {
-          doctorBoxes[i].style.display = "flex"
-        }
-      }
-    }
-    if(selectedValue === "عيون") {
-      for(let i = 0 ; i < doctorBoxes.length; i++) {
-        doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("عيون")) {
-          doctorBoxes[i].style.display = "flex"
-        }
-      }
-    }
-  }
-
-        </script>
 </body>
 </html>

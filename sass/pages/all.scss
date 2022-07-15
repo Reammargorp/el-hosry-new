@@ -603,8 +603,11 @@ ul {
 /* End Mobile Second Bar */
 /* Start Info */
 .info-section {
+
   background-image: url("/imgs/info-img.webp");
   background-repeat: no-repeat;
+  @include boxShadow;margin-bottom: 1px;
+
   background-position: 50%;
   background-size: cover;
   min-height: 300px;
