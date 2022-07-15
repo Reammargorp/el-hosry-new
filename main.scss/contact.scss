@@ -13,116 +13,27 @@
 
 // Import Functions
 @use "../sass/functions/functions" as *;
-// Global Variable
 
-/* Start Doctors */
-.doctors {
-  background-color: $section-color-two;
-  .container {
-    .title {
-      h2 {
-        @include breakpoints(small) {
-          text-align: center;
-        }
-        margin-bottom: 3rem;
-        direction: rtl;
-        font-size: $font-size;
-      }
-    }
-    .flex {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      @include breakpoints(small) {
-        flex-direction: column;
-      }
-        .address-links {
-          @include breakpoints(small) {
-            margin-bottom: 3rem;
+
+/* Start contact */
+.contact {
+  direction: rtl;
+.container {
+  .row {
+      .image {
+          img {
+              max-width: 100%;
+              width: 100%;
           }
-            ul {
-              display: flex;
-              flex-direction: row-reverse;
-              gap: 3rem;
-               li {
-                cursor: pointer;
-                transition: $transition;
-                padding-bottom: 1rem;
-                &.active  {
-                  border-bottom: 2px solid $main-color;
-                  color: $main-color;
-                }
-                &:hover {
-                  color: $main-color;
-                  border-bottom: 2px solid $main-color;
-                }
-               }
-            }
-        }
-        .doctors-list {
-          display: flex;
-          direction: rtl;
-          select {
-            width: 300px;
-            @include breakpoints(mobile) {
-              width: 250px;
-            }
-            font-size: $font-size-small;
-            font-weight: bolder;
-          }
-        }
       }
-    .doctors-cards {
-      gap: 3rem;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-      .doctor {
-        .doctor-box {
+      .form {
           
-          @include boxShadow;
-          @include flexCenter;
-          @include breakpoints(mobile) {
-            width: 100%;
-          }
-          padding: 25px 35px;
-          flex-direction: column;
-          text-align: center; 
-          width: 100%;
-          width: 255px;
-          height: 50vh;
-            img {
-              @include imgShadow;
-            }
-            .info {
-              .branch {
-                color: $main-color;
-                cursor: pointer;
-                svg {
-                  transition: $transition;
-                  padding-left: 3px;
-                }
-                &:hover {
-                  svg {
-                    padding-left: 6px;
-                  }
-                }
-  
-              }
-  
-            }
-        }
       }
-    }
   }
 }
-/* End Doctors */
-
-
+}
+/* End contact */
+// // Global Variable
 // /* Start Global Rules */
 // * {
 //   -webkit-box-sizing: border-box;
@@ -149,6 +60,28 @@
 // .main-btn:hover {
 //   color: $p-color;
 // }
+
+// .email {
+//   font-size: $font-size-alt;
+//   direction: rtl;
+//   display:flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   transition: $transition;
+//   color: $section-color;
+//   margin-bottom: -2rem;
+//   svg {
+//   color: $second-color;
+//   padding-right: 6px;
+//     transition: $transition;
+//   }
+//   &:hover {
+//     svg {
+//       padding-right: 10px;
+//     }
+//   }
+// }
+
 // .second-btn {
 //   background-color: $section-color;
 //   padding: 1rem 2rem;
@@ -200,6 +133,34 @@
 //   &:hover {
 //     color:white;
 //     background-position:center;
+//   }
+// }
+// .booking-btn {
+//   @include flexCenter;
+//   @include none;
+//   transition: $transition;
+//   background-color: $second-color;
+//   width: 200px;
+//   height: 50px;
+//   margin: 0 auto;
+//   margin-top: 5rem !important;
+//   padding: 10px 20px;
+//   border-radius: 5px;
+//   &:hover {
+//     svg {
+//       padding-left: 15px;
+//     }
+//   }
+//   button {
+//     @include btnNone;
+//       color: white;
+//       font-weight: bolder;
+//       transition: $transition;
+//       font-size: $font-size;
+//       svg {
+//       transition: $transition;
+//       padding-left: 10px;
+//       }
 //   }
 // }
 // input[type="text"]::placeholder {
@@ -600,6 +561,7 @@
 //   }
 // }
 // /* End Landing */
+// /* Start Mobile Second Bar */
 // .mob-second-bar {
 //   position: relative;
 //   margin-bottom: 2px;
@@ -609,7 +571,7 @@
 //     .navbar {
 //       .navbar-brand {
 //         img {
-//           width: 60%;
+//           width: 660%;
 //           max-width: 100px;
 //         }
 //       }
@@ -701,7 +663,7 @@
 // /* End Info */
 
 
-// /*Start Call Us*/
+// /* Start Call Us*/
 // .call {
 //   direction: rtl;
 //   background-color: $section-color-two;
@@ -760,8 +722,9 @@
 
 // /* Start Footer */
 // .footer {
-//   @include boxShadow;
+  
 //   position: relative;
+//   @include boxShadow;
 //   direction: rtl;
 //   background-color: $main-color;
 //   width: 100%;

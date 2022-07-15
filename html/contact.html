@@ -10,7 +10,7 @@
         <!-- Font Awsome -->
         <link rel="stylesheet" href="../css/all.min.css">
         <!-- Css File -->
-        <link rel="stylesheet" href="../main.css/branchInfo.css">
+        <link rel="stylesheet" href="../main.css/contact.css">
         <!-- Google Fontds -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -167,41 +167,48 @@
             </div>
         </div>
         <!-- End Info -->
-      <div class="main-title pt-5 mt-5">
-        <div class="special-title"><span>صور</span> من داخل الفرع</div>
-        <span class="special-span"></span>
-        <span class="special-span-two"></span>
-      </div>
-        <!-- Start Slider -->
-        <div class="slider">
-            <div class="slide-one active" id="slide-one">
-            <img src="../imgs/first.jpg" alt="">
-            </div>
-            <div class="slide-two" id="slide-two">
-                <img src="../imgs/second.jpg" alt="">
+        <!-- Start Contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 image">
+                        <img src="../imgs/hosry-arabic.png" alt="">
+                    </div>
+                    <div class="col-lg-9 form">
+                        <div class="form">
+                            <!-- Name -->
+                            <label for="fullname">برجاء كتابة الإسم ثلاثي</label>
+                            <input type="text" name="fullname" id="fullname" required placeholder="fullname">
+                            <!-- Email -->
+                            <label for="email">برجاء إدخال البريد الإلكترزني</label>
+                            <input type="email" name="email" id="email" placeholder="email" required>
+                            <!-- phone -->
+                            <label for="phone">برجاء إدخال رقم الهاتف</label>
+                            <input type="number" name="phone" id="phone" value="+20" placeholder="phone Number" required>
+                            <!-- clinics -->
+                            <label for="clinics">برجاء إختيار التخصص المناسب لحالتك</label>
+                            <select name="clinics" id="clinics">
+                                <option value="برجاء إختيار التخصص المناسب لحالتك">برجاء إختيار التخصص المناسب لحالتك</option>
+                                <option value="الباطنة العامة">الباطنة العامة</option>
+                                <option value="أمراض الدم">أمراض الدم</option>
+                            </select>
+                            <!-- doctor -->
+                            <label for="doctor">برجاء إختيار الطبيب</label>
+                            <select name="doctor" id="docotr" aria-placeholder="برجاء إختيار الطبيب">
+                                <option value="برجاء إختيار الطبيب">برجاء إختيار الطبيب</option>
+                                <option value=".د عبد المجيد رمزي">.د عبد المجيد رمزي</option>
+                                <option value="أ.د عمرو حسان مصطفى">أ.د عمرو حسان مصطفى</option>
+                                <option value="أ. نادية حتحوت">أ. نادية حتحوت</option>
+                            </select>
+                            <!-- branch -->
+                            <label for=""></label>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <!-- End Slider -->
-        
-        <!-- Star Branch -->
-        <div class="branch-info pt-5 pb-5">
-            <div class="container pt-5 pb-5">
-                   <div class="location">
-                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
-                    <a href="https://www.google.com/maps?ll=29.973378,30.945137&z=12&t=m&hl=ar&a=EG&mapclient=embed&cid=17543034306877770774" class="title">
-                        فرع محطة الرمل - 23 ميدان سعد زغلول الوحدة االدارية بالدور الأول علوي – رقم 3
-                    </a>
-                </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55299.369065214225!2d31.01448774179686!3d29.97337799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145856f782d354f5%3A0xf37560c14ff0cc16!2z2LnZitin2K_Yp9iqINin2YTYrdi12LHZig!5e0!3m2!1sar!2seg!4v1657479573559!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
-                
-                <div class="booking-btn pt-5 pb-5">
-                  <a href="./html/services.html">
-                    <button>احجز الان<i class="fa-regular fa-clipboard"></i></button>
-                  </a>
-                </div>
-                <a href="#" class="email">info@el-hosry-clinics.com <i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </div>
+        <!-- End Contact -->
         <!-- End Branch -->
         <!-- Start call us -->
         <div class="call pb-5" id="call">
@@ -310,19 +317,7 @@
         <script src="../js/bootstrap.bundle.min.js"></script>
         <!-- Font Awsome -->
         <script src="../js/all.min.js"></script>
-        <script>
-          
-          let slideOne = document.getElementById("slide-one");
-let slideTwo = document.getElementById("slide-two");
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62ce8c4ca054425b"></script>
 
-console.log(slideOne)
-
-setInterval( () => { 
-  slideOne.classList.toggle("active")
-  slideTwo.classList.toggle("active")
-}, 5000)
-
-
-        </script>
 </body>
 </html>

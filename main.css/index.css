@@ -236,6 +236,13 @@ ul {
           justify-content: space-between;
   text-align: center;
 }
+@media (max-width: 991px) {
+  .top-bar .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .top-bar .container .links-top-bar {
   font-weight: 700;
   display: -webkit-box;
@@ -273,6 +280,11 @@ ul {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+@media (max-width: 991px) {
+  .top-bar .container .links-top-bar span {
+    display: none;
+  }
+}
 .top-bar .container .links-top-bar span:hover {
   color: #005fab;
 }
@@ -292,6 +304,17 @@ ul {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   gap: 2rem;
+}
+@media (max-width: 767px) {
+  .top-bar .container .info-top-bar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 .top-bar .container .info-top-bar a {
   color: white;
