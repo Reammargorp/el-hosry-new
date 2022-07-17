@@ -35,7 +35,7 @@
             flex-direction: row;
             width: 50%;
             @include breakpoints(small) {
-                width:100%;
+                width: 100%;
             }
             #result-search-bar {
                 width: 100%;
