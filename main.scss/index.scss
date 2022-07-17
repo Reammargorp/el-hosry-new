@@ -52,29 +52,19 @@ html {
 .second-btn:hover {
   color: $p-color;
 }
-.special-title {
+.main-title {
+  width: 100%;
   direction: rtl;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: calculate($font-size , 5px);
-  gap: 2rem;
-  margin-bottom: 5rem;
-  padding-bottom: 1rem;
-  font-weight: 500;
-  span {
-    color: $main-color;
-  }
+  margin: 2rem auto 4rem auto;
 }
-.special-span {
-  width: 120px;
-  height: 2px;
-  background-color: $color-hover;
-  background-image: -webkit-linear-gradient(left, $color-hover, $main-color);
-  display: flex;
-  margin: -50px auto 60px auto;
+.special-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000 ;
 }
+
 .liquid {
   @include flexCenter;
   background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
@@ -586,6 +576,54 @@ ul {
     }
 }
 /* End Slider */
+
+/* Start about */
+.about {
+  background-color: $section-color-two;
+  .container {
+    .main-title {
+      justify-content: flex-start;
+      margin-bottom : -1rem;
+    }
+      .about-box {
+          img {
+            @include boxShadow;
+            @include breakpoints(small) {
+              width: 70%;
+            }
+            border-radius: 20px;
+              max-width: 100%;
+              width: 50%;
+          }
+          .name {
+              font-size: $font-size;
+              color: $main-color;
+              font-weight: bolder;
+          }
+          .describe {
+              margin-top: 2rem;
+              line-height: 2!important;
+          }
+          .style-box{
+              margin-top: 5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              @include breakpoints(small) {
+                  flex-direction: column;
+                  text-align: center;
+              }
+              gap: 5rem;
+              direction: rtl;
+          }
+
+      }
+  }
+
+}
+/* End about */
+
 /* Start team */
 .team {
   background-color: $section-color;
@@ -593,8 +631,15 @@ ul {
     display: none !important;
   }
   .container {
+    .main-title {
+      justify-content: center;
+      margin-top: -2rem;
+      .special-title {
+        color: white;
 
-    position: relative;
+      }
+    }
+
     transition: $transition-so-slow;
     &.active {
       left: 0%;
@@ -602,7 +647,12 @@ ul {
     .carousel-indicators {
       margin-bottom: -4%;
       .data-bs-target {
-        background-color: $main-color !important;
+        background-color: white;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        position: relative;
       }
     }
     .carousel-control-next {
@@ -649,7 +699,11 @@ ul {
     display: block !important;
   }
   .container {
-
+      .main-title {
+        .special-title {
+          color: #fff;
+        }
+      }
 
     position: relative;
     transition: $transition-so-slow;
@@ -657,10 +711,15 @@ ul {
       left: 0%;
     }
     .carousel-indicators {
-      margin-bottom: -6%;
-      .data-bs-target {
-        background-color: $main-color !important;
-      }
+      margin-bottom: -12%;
+        .data-bs-target {
+          background-color: white;
+          width: 10px;
+          height: 10px;
+          margin: 5px;
+          border-radius: 50%;
+          position: relative;
+        }
     }
     .carousel-control-next {
       .carousel-control-next-icon {
