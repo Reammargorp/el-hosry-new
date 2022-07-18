@@ -63,6 +63,8 @@ html {
 }
 
 .special-title {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   font-weight: bold;
   font-size: 30px;
   color: #000;
@@ -744,6 +746,11 @@ ul {
 
 /* End Mobile Second Bar */
 /* Start Slider */
+.slider {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  position: relative;
+}
 .slider .slide-one {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -897,7 +904,7 @@ ul {
 /* End team */
 /* Start team two */
 .team-two {
-  background-color: #005fab;
+  background-color: #005fab !important;
 }
 @media (max-width: 991px) {
   .team-two {
@@ -916,7 +923,7 @@ ul {
   left: 0%;
 }
 .team-two .container .carousel-indicators {
-  margin-bottom: -12%;
+  margin-bottom: -6%;
 }
 .team-two .container .carousel-indicators .data-bs-target {
   background-color: white;
@@ -946,6 +953,7 @@ ul {
 }
 /* Start Services*/
 .services {
+  background-color: #f5f9f7;
   position: relative;
 }
 .services .special-title {
@@ -1045,6 +1053,9 @@ ul {
 
 /* End Services*/
 /* Start Article */
+.articles {
+  background-color: #f5f9f7;
+}
 @media (max-width: 991px) {
   .articles {
     display: none !important;
@@ -1134,10 +1145,15 @@ ul {
   color: #005fab;
 }
 .articles .container .carousel-indicators {
-  margin-bottom: -3%;
+  margin-bottom: -4%;
 }
 .articles .container .carousel-indicators .data-bs-target {
-  background-color: #005fab !important;
+  background-color: #005fab;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative;
 }
 .articles .container .carousel-control-next {
   -webkit-transform: translateX(70%);
@@ -1165,6 +1181,7 @@ ul {
 /* End Article */
 /* Start Article two */
 .articles-two {
+  background-color: #f5f9f7;
   display: none;
   overflow: hidden;
 }
@@ -1254,10 +1271,15 @@ ul {
   color: #005fab;
 }
 .articles-two .container .carousel-indicators {
-  margin-bottom: -6%;
+  margin-bottom: -5rem;
 }
 .articles-two .container .carousel-indicators .data-bs-target {
-  background-color: #005fab !important;
+  background-color: #005fab;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative;
 }
 .articles-two .container .carousel-control-next {
   -webkit-transform: translateX(60%);

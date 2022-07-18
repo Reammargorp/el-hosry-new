@@ -828,10 +828,9 @@ ul {
 /* End Mobile Second Bar */
 /* Start Info */
 .info-section {
-  background-image: url("/imgs/info-img.webp");
-  background-repeat: no-repeat;
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  position: relative;
   margin-bottom: 1px;
   background-position: 50%;
   background-size: cover;

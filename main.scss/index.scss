@@ -60,6 +60,7 @@ html {
   margin: 2rem auto 4rem auto;
 }
 .special-title {
+  transition: $transition;
   font-weight: bold;
   font-size: 30px;
   color: #000 ;
@@ -546,6 +547,8 @@ ul {
 
 /* Start Slider */
 .slider {
+  @include boxShadow; 
+  position: relative;
     .slide-one {
       transition: $transition;
       display: none;
@@ -579,7 +582,7 @@ ul {
 
 /* Start about */
 .about {
-  background-color: $section-color-two;
+  background-color:$section-color-two ;
   .container {
     .main-title {
       justify-content: flex-start;
@@ -626,6 +629,7 @@ ul {
 
 /* Start team */
 .team {
+
   background-color: $section-color;
   @include breakpoints(small) {
     display: none !important;
@@ -694,7 +698,7 @@ ul {
 /* End team */
 /* Start team two */
 .team-two {
-  background-color: $section-color;
+  background-color: $section-color !important;
   @include breakpoints(small) {
     display: block !important;
   }
@@ -711,7 +715,7 @@ ul {
       left: 0%;
     }
     .carousel-indicators {
-      margin-bottom: -12%;
+      margin-bottom: -6%;
         .data-bs-target {
           background-color: white;
           width: 10px;
@@ -757,6 +761,8 @@ ul {
 }
 /* Start Services*/
 .services {
+  background-color: $section-color-two;
+
   position: relative;
   .special-title {
     color: black;
@@ -833,6 +839,7 @@ ul {
 
 /* Start Article */
 .articles {
+  background-color: $section-color-two;
   @include breakpoints(small) {
     display: none !important;
   }
@@ -908,10 +915,14 @@ ul {
       }
     }
     .carousel-indicators {
-      // transform: translateY(400%);
-      margin-bottom: -3%;
+      margin-bottom: -4%;
       .data-bs-target {
-        background-color: $color-hover !important;
+        background-color: $section-color;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        position: relative;
       }
     }
     .carousel-control-next {
@@ -939,6 +950,7 @@ ul {
 /* End Article */
 /* Start Article two */
 .articles-two {
+  background-color: $section-color-two;
   display: none;
   @include breakpoints(small) {
     display: block !important;
@@ -1011,9 +1023,14 @@ ul {
       }
     }
     .carousel-indicators {
-      margin-bottom: -6%;
+      margin-bottom: -5rem;
       .data-bs-target {
-        background-color: $color-hover !important;
+        background-color: $section-color;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        position: relative;
       }
     }
     .carousel-control-next {

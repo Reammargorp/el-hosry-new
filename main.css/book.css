@@ -1115,82 +1115,14 @@ ul {
 }
 
 /* End Footer */
-/* Start job */
-.jobs {
+/* Start contact */
+.contact {
   direction: rtl;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: relative;
-  right: -100%;
 }
-.jobs.active {
-  right: 0%;
-  left: 0%;
+.contact .container .main-title div {
+  font-size: 25px !important;
 }
-.jobs .main-title {
-  font-size: 40px;
-  color: black;
-  text-align: center;
-  margin: 3rem auto;
-  font-weight: bolder;
-}
-.jobs .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 70%;
-}
-@media (max-width: 991px) {
-  .jobs .container {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-.jobs .container .job-card {
-  cursor: pointer;
-  text-align: center;
-}
-.jobs .container .job-card img {
-  max-width: 100%;
-  width: 100%;
-  vertical-align: middle;
-}
-.jobs .container .job-card .job-btn {
-  padding: 10px 20px;
-  color: white;
-  font-size: 25px;
-  background-color: #005fab;
-}
-
-/* End job */
-/* Start Doctors-job*/
-.doctors-form {
-  direction: rtl;
-  margin: 10rem 0 5rem 0;
-  position: relative;
-  left: -100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: none;
-}
-.doctors-form.active {
-  display: block;
-  left: 0%;
-}
-.doctors-form .container .row-box {
+.contact .container .row-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1206,7 +1138,7 @@ ul {
           align-items: center;
 }
 @media (max-width: 991px) {
-  .doctors-form .container .row-box {
+  .contact .container .row-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1214,16 +1146,16 @@ ul {
     width: 100%;
   }
 }
-.doctors-form .container .row-box .image img {
+.contact .container .row-box .image img {
   max-width: 100%;
   width: 100%;
 }
 @media (max-width: 991px) {
-  .doctors-form .container .row-box .image img {
+  .contact .container .row-box .image img {
     margin-bottom: 2rem;
   }
 }
-.doctors-form .container .row-box form {
+.contact .container .row-box form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1165,7 @@ ul {
           flex-direction: column;
   gap: 3rem;
 }
-.doctors-form .container .row-box form .row-box {
+.contact .container .row-box form .row-box {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1245,14 +1177,14 @@ ul {
   gap: 2rem;
 }
 @media (max-width: 991px) {
-  .doctors-form .container .row-box form .row-box {
+  .contact .container .row-box form .row-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 }
-.doctors-form .container .row-box form .row-box .label-column {
+.contact .container .row-box form .row-box .label-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1263,11 +1195,11 @@ ul {
   width: 170%;
 }
 @media (max-width: 991px) {
-  .doctors-form .container .row-box form .row-box .label-column {
+  .contact .container .row-box form .row-box .label-column {
     margin-bottom: 2rem;
   }
 }
-.doctors-form .container .row-box form .row-box .label-column input {
+.contact .container .row-box form .row-box .label-column input {
   background-color: transparent;
   border: none;
   outline: none;
@@ -1279,32 +1211,32 @@ ul {
   border-bottom: 1px solid #d5d5d5;
   padding-bottom: 1rem;
 }
-.doctors-form .container .row-box form .row-box .label-column input::-webkit-input-placeholder {
+.contact .container .row-box form .row-box .label-column input::-webkit-input-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.doctors-form .container .row-box form .row-box .label-column input::-moz-placeholder {
+.contact .container .row-box form .row-box .label-column input::-moz-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.doctors-form .container .row-box form .row-box .label-column input:-ms-input-placeholder {
+.contact .container .row-box form .row-box .label-column input:-ms-input-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.doctors-form .container .row-box form .row-box .label-column input::-ms-input-placeholder {
+.contact .container .row-box form .row-box .label-column input::-ms-input-placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.doctors-form .container .row-box form .row-box .label-column input::placeholder {
+.contact .container .row-box form .row-box .label-column input::placeholder {
   font-size: 15px;
   font-weight: bolder;
 }
-.doctors-form .container .row-box form .row-box .label-column label {
+.contact .container .row-box form .row-box .label-column label {
   font-size: 15px;
   font-weight: bolder;
   padding-bottom: 1rem;
 }
-.doctors-form .container .row-box form .row-box .label-column select {
+.contact .container .row-box form .row-box .label-column select {
   background-color: transparent;
   border: none;
   outline: none;
@@ -1315,12 +1247,12 @@ ul {
   font-weight: bolder;
   color: #757575;
 }
-.doctors-form .container .row-box form .row-box .label-column select option {
+.contact .container .row-box form .row-box .label-column select option {
   color: #757575;
   font-size: 15px;
   font-weight: bolder;
 }
-.doctors-form .container .row-box form #submit {
+.contact .container .row-box form #submit {
   background-color: transparent;
   border: none;
   outline: none;
@@ -1333,178 +1265,4 @@ ul {
   color: white;
 }
 
-/* End Doctors-job*/
-/* Start mange-job*/
-.mange-form {
-  direction: rtl;
-  margin: 10rem 0 5rem 0;
-  position: relative;
-  left: -100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  display: none;
-}
-.mange-form.active {
-  display: block;
-  left: 0%;
-}
-.mange-form .container .row-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media (max-width: 991px) {
-  .mange-form .container .row-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-}
-.mange-form .container .row-box .image img {
-  max-width: 100%;
-  width: 100%;
-}
-@media (max-width: 991px) {
-  .mange-form .container .row-box .image img {
-    margin-bottom: 2rem;
-  }
-}
-.mange-form .container .row-box form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3rem;
-}
-.mange-form .container .row-box form .row-box {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 2rem;
-}
-@media (max-width: 991px) {
-  .mange-form .container .row-box form .row-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-.mange-form .container .row-box form .row-box .label-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 170%;
-}
-.mange-form .container .row-box form .row-box .label-column.label-none-mange {
-  display: none;
-}
-.mange-form .container .row-box form .row-box .label-column.label-none-mange.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.mange-form .container .row-box form .row-box .label-column.label-none-clinic {
-  display: none;
-}
-.mange-form .container .row-box form .row-box .label-column.label-none-clinic.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (max-width: 991px) {
-  .mange-form .container .row-box form .row-box .label-column {
-    margin-bottom: 2rem;
-  }
-}
-.mange-form .container .row-box form .row-box .label-column input {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: none;
-  border-bottom: 1px solid #d5d5d5;
-  padding-bottom: 1rem;
-}
-.mange-form .container .row-box form .row-box .label-column input::-webkit-input-placeholder {
-  font-size: 15px;
-  font-weight: bolder;
-}
-.mange-form .container .row-box form .row-box .label-column input::-moz-placeholder {
-  font-size: 15px;
-  font-weight: bolder;
-}
-.mange-form .container .row-box form .row-box .label-column input:-ms-input-placeholder {
-  font-size: 15px;
-  font-weight: bolder;
-}
-.mange-form .container .row-box form .row-box .label-column input::-ms-input-placeholder {
-  font-size: 15px;
-  font-weight: bolder;
-}
-.mange-form .container .row-box form .row-box .label-column input::placeholder {
-  font-size: 15px;
-  font-weight: bolder;
-}
-.mange-form .container .row-box form .row-box .label-column label {
-  font-size: 15px;
-  font-weight: bolder;
-  padding-bottom: 1rem;
-}
-.mange-form .container .row-box form .row-box .label-column select {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #d5d5d5;
-  padding-bottom: 1rem;
-  font-size: 15px;
-  font-weight: bolder;
-  color: #757575;
-}
-.mange-form .container .row-box form .row-box .label-column select option {
-  color: #757575;
-  font-size: 15px;
-  font-weight: bolder;
-}
-.mange-form .container .row-box form #submit {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 16px;
-  font-weight: bolder;
-  background-color: #f57410 !important;
-  border-radius: 10px;
-  padding: 5px 9px;
-  color: white;
-}
-
-/* End mange-job*/
+/* End contact */
