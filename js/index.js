@@ -55,57 +55,56 @@ let mainSubmit = document.querySelector(".main-search .search-bar .mainSubmit");
 mainSubmit.onclick = function (e) {
 for(let s = 0; s < serviceSearch.length ; s++) {
     if (mainText.value == serviceSearch[s]) {
-        open("../html/services.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/services.html" ,"")
     }
 }
 for(let a = 0; a < articleSearch.length ; a++) {
     if (mainText.value == articleSearch[a]) {
-        open("../html/articles.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/about.html" ,"")
     }
 }
 for(let c = 0; c < contractsSearch.length ; c++) {
     if (mainText.value == contractsSearch[c]) {
-        open("../html/contracts.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/contracts.html" ,"")
     }
 }
 for(let b = 0; b < branchSearch.length ; b++) {
     if (mainText.value == branchSearch[b]) {
-        open("../html/branch.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/branch.html" ,"")
     }
 }
 for(let d = 0; d < doctorsSearch.length ; d++) {
     if (mainText.value == doctorsSearch[d]) {
-        open("../html/doctors.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/doctors.html" ,"")
     }
 }
 for(let j = 0; j < jobsSearch.length ; j++) {
     if (mainText.value == jobsSearch[j]) {
-        open("../html/jobs.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/jobs.html" ,"")
     }
 }
 for(let o = 0; o < aboutSearch.length ; o++) {
     if (mainText.value == aboutSearch[o]) {
-        open("../html/about.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/about.html" ,"")
     }
 }
 for(let i = 0; i < indexSearch.length ; i++) {
     if (mainText.value == indexSearch[i]) {
-        open("/index.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/index.html" ,"")
     }
 }
 for(let p = 0; p < bookSearch.length ; p++) {
     if (mainText.value == bookSearch[p]) {
-        open("../html/book.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/book.html" ,"")
     }
 }
 for(let r = 0; r < drWaleedSearch.length ; r++) {
     if (mainText.value == drWaleedSearch[r]) {
-        open("../html/doctorWaleedInfo.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/doctorWaleedInfo.html" ,"")
     }
 }
 if (mainText.value == "") {
-    open("../html/404.html" ,"")
-    mainText.value = ""
+    open("file:///E:/programming/my-work/el-hosry-new/html/404.html" ,"")
 }
 
 }
@@ -116,64 +115,61 @@ let menuSubmit = document.querySelector(".menu-search .menu-submit");
 console.log(menuText)
 
 menuSubmit.onclick = function (e) {
-for(let s = 0; s < serviceSearch.length ; s++) {
-    if (menuText.value == serviceSearch[s]) {
-       open("../html/services.html" ,"")
+    for(let s = 0; s < serviceSearch.length ; s++) {
+        if (menuText.value == serviceSearch[s]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/services.html" ,"")
+        }
     }
-}
-for(let a = 0; a < articleSearch.length ; a++) {
-    if (menuText.value == articleSearch[a]) {
-       open("../html/articles.html" ,"")
+    for(let a = 0; a < articleSearch.length ; a++) {
+        if (menuText.value == articleSearch[a]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/about.html" ,"")
+        }
     }
-}
-for(let c = 0; c < contractsSearch.length ; c++) {
-    if (menuText.value == contractsSearch[c]) {
-       open("../html/contracts.html" ,"")
+    for(let c = 0; c < contractsSearch.length ; c++) {
+        if (menuText.value == contractsSearch[c]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/contracts.html" ,"")
+        }
     }
-}
-for(let b = 0; b < branchSearch.length ; b++) {
-    if (menuText.value == branchSearch[b]) {
-       open("../html/branch.html" ,"")
+    for(let b = 0; b < branchSearch.length ; b++) {
+        if (menuText.value == branchSearch[b]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/branch.html" ,"")
+        }
     }
-}
-for(let d = 0; d < doctorsSearch.length ; d++) {
-    if (menuText.value == doctorsSearch[d]) {
-       open("../html/doctors.html" ,"")
+    for(let d = 0; d < doctorsSearch.length ; d++) {
+        if (menuText.value == doctorsSearch[d]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/doctors.html" ,"")
+        }
     }
-}
-for(let j = 0; j < jobsSearch.length ; j++) {
-    if (menuText.value == jobsSearch[j]) {
-       open("../html/jobs.html" ,"")
+    for(let j = 0; j < jobsSearch.length ; j++) {
+        if (menuText.value == jobsSearch[j]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/jobs.html" ,"")
+        }
     }
-}
-for(let o = 0; o < aboutSearch.length ; o++) {
-    if (menuText.value == aboutSearch[o]) {
-       open("../html/about.html" ,"")
+    for(let o = 0; o < aboutSearch.length ; o++) {
+        if (menuText.value == aboutSearch[o]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/about.html" ,"")
+        }
     }
-}
-for(let i = 0; i < indexSearch.length ; i++) {
-    if (menuText.value == indexSearch[i]) {
-       open("/index.html" ,"")
+    for(let i = 0; i < indexSearch.length ; i++) {
+        if (menuText.value == indexSearch[i]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/index.html" ,"")
+        }
     }
-}
-for(let p = 0; p < bookSearch.length ;  p++) {
-    if (menuText.value == bookSearch[p]) {
-       open("../html/book.html" ,"")
+    for(let p = 0; p < bookSearch.length ; p++) {
+        if (menuText.value == bookSearch[p]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/book.html" ,"")
+        }
     }
-}
-for(let r = 0; r < drWaleedSearch.length ; r++) {
-    if (menuText.value == drWaleedSearch[r]) {
-       open("../html/doctorWaleedInfo.html" ,"")
+    for(let r = 0; r < drWaleedSearch.length ; r++) {
+        if (menuText.value == drWaleedSearch[r]) {
+            open("file:///E:/programming/my-work/el-hosry-new/html/doctorWaleedInfo.html" ,"")
+        }
     }
-}
-
-
     if (menuText.value == "") {
-       open("../html/404.html" ,"")
+        open("file:///E:/programming/my-work/el-hosry-new/html/404.html" ,"")
     }
     
-}
-
+    }
 
   let btnTop = document.querySelector(".btn-up")
 
