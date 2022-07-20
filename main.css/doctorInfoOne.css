@@ -1119,6 +1119,11 @@ ul {
 .doctor-info {
   background-color: #f5f9f7;
 }
+@media (max-width: 991px) {
+  .doctor-info {
+    text-align: center;
+  }
+}
 .doctor-info .container .back {
   direction: rtl;
 }
@@ -1133,6 +1138,11 @@ ul {
 .doctor-info .container .row {
   direction: rtl;
 }
+@media (max-width: 991px) {
+  .doctor-info .container .row {
+    text-align: center;
+  }
+}
 .doctor-info .container .row img {
   -webkit-filter: drop-shadow(0 4px 10px rgba(5, 104, 57, 0.1882352941));
           filter: drop-shadow(0 4px 10px rgba(5, 104, 57, 0.1882352941));
@@ -1140,6 +1150,16 @@ ul {
   max-width: 100%;
   border: 3px solid white;
   margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .doctor-info .container .row img {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .doctor-info .container .row .info {
+    text-align: center;
+  }
 }
 .doctor-info .container .row .info .name {
   font-size: 30px;

@@ -18,7 +18,11 @@
 /* Start DoctorInfo */
 .doctor-info {
   background-color: $section-color-two;
+  @include breakpoints(small) {
+    text-align:center;
+    }
     .container {
+
       .back {
         direction: rtl;
         svg {
@@ -32,10 +36,19 @@
       }
         .row {
           direction: rtl;
+          @include breakpoints(small) {
+            text-align:center;
+            }
             img {
               @include imgShadow;
+              @include breakpoints(small) {
+                text-align:center;
+                }
             }
             .info {
+              @include breakpoints(small) {
+              text-align:center;
+              }
               .name {
                 font-size: 30px;
               }
