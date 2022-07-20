@@ -303,6 +303,9 @@ ul {
     text-align: center;
   }
 }
+.top-bar .container .info-top-bar .column {
+  direction: ltr;
+}
 .top-bar .container .info-top-bar a {
   color: white;
   font-size: 15px;
@@ -783,6 +786,11 @@ ul {
 .about {
   background-color: #f5f9f7;
 }
+@media (max-width: 991px) {
+  .about {
+    margin-top: -3rem;
+  }
+}
 .about .container .main-title {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -923,7 +931,7 @@ ul {
   left: 0%;
 }
 .team-two .container .carousel-indicators {
-  margin-bottom: -6%;
+  margin-bottom: -5rem;
 }
 .team-two .container .carousel-indicators .data-bs-target {
   background-color: white;
@@ -955,6 +963,11 @@ ul {
 .services {
   background-color: #f5f9f7;
   position: relative;
+}
+@media (max-width: 991px) {
+  .services {
+    margin-top: -5rem;
+  }
 }
 .services .special-title {
   color: black;
@@ -1031,6 +1044,11 @@ ul {
   margin: auto;
   padding: 10px 20px;
   border-radius: 5px;
+}
+@media (max-width: 991px) {
+  .services .container .booking-btn {
+    margin-top: 3rem;
+  }
 }
 .services .container .booking-btn:hover svg {
   padding-left: 15px;
@@ -1222,7 +1240,9 @@ ul {
 }
 .articles-two .container .carousel .carousel-inner .carousel-item .row .card .image {
   position: relative;
-  cursor: pointer;
+}
+.articles-two .container .carousel .carousel-inner .carousel-item .row .card .image img {
+  width: 100%;
 }
 .articles-two .container .carousel .carousel-inner .carousel-item .row .card .image .img-icon {
   position: absolute;
@@ -1412,6 +1432,9 @@ ul {
 
 /* End info */
 /* Start Location */
+.location {
+  background-color: #f5f9f7;
+}
 @media (max-width: 991px) {
   .location .row {
     width: 100%;
@@ -1465,7 +1488,19 @@ ul {
   color: #fff;
   text-align: center;
   padding: 35.5px 40px;
-  height: 31.3vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 767px) {
+  .location .row .map-address .address-box .title {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 767px) {
+  .location .row .map-address .address-box p {
+    font-size: small !important;
+  }
 }
 .location .row .map-address .address-one {
   border-left: 1px solid white;

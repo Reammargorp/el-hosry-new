@@ -191,10 +191,14 @@ ul {
         align-items: center;
         text-align: center;
       }
+      .column {
+        direction :ltr;
+      }
     gap: 2rem;
     a {
     color: white;
     font-size: 15px;
+
     &.clock {
       cursor: auto; 
       &:hover {
@@ -583,6 +587,9 @@ ul {
 /* Start about */
 .about {
   background-color:$section-color-two ;
+  @include breakpoints(small) {
+    margin-top: -3rem;
+  }
   .container {
     .main-title {
       justify-content: flex-start;
@@ -715,7 +722,7 @@ ul {
       left: 0%;
     }
     .carousel-indicators {
-      margin-bottom: -6%;
+      margin-bottom: -5rem;
         .data-bs-target {
           background-color: white;
           width: 10px;
@@ -762,7 +769,9 @@ ul {
 /* Start Services*/
 .services {
   background-color: $section-color-two;
-
+  @include breakpoints(small) {
+    margin-top: -5rem;
+  }
   position: relative;
   .special-title {
     color: black;
@@ -806,6 +815,9 @@ ul {
       }
     } 
     .booking-btn {
+      @include breakpoints(small) {
+        margin-top: 3rem
+      }
       @include flexCenter;
       @include none;
       transition: $transition;
@@ -976,8 +988,11 @@ ul {
               @include boxShadow;
 
               .image {
+                // cursor: pointer;
                 position: relative;
-                cursor: pointer;
+                img {
+                width:100%;
+                }
                 .img-icon {
                   position: absolute;
                   left: 5%;
@@ -1129,6 +1144,7 @@ ul {
 /* End info */
 /* Start Location */
 .location {
+  background-color: $section-color-two;
   .row {
     @include breakpoints(small) {
       width:100%;
@@ -1144,7 +1160,7 @@ ul {
       padding: 0;
       gap: 0;
       display: none;
-      width: 100%;
+      width: 100%; 
       &.active {
         display: block;
         
@@ -1169,7 +1185,17 @@ ul {
         color: #fff;
         text-align: center;
         padding: 35.5px 40px;
-        height: 31.3vh ;
+        height:fit-content ;
+        .title {
+          @include breakpoints(mobile) {
+            font-size: 13px !important;
+          }
+        }
+        p {
+          @include breakpoints(mobile) {
+            font-size: small !important;
+          }
+        }
       }
       .address-one {
         border-left: 1px solid white;
