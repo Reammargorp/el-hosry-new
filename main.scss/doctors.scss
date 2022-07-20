@@ -45,6 +45,9 @@
               display: flex;
               flex-direction: row-reverse;
               gap: 3rem;
+              @include breakpoints(mobile) {
+                gap: 2rem;
+              }
                li {
                 cursor: pointer;
                 transition: $transition;
@@ -94,7 +97,8 @@
           text-align: center; 
           width: 100%;
           width: 255px;
-          height: 50vh;
+          height: fit-content;
+
             img {
               @include imgShadow;
             }

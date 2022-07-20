@@ -1167,6 +1167,11 @@ ul {
           flex-direction: row-reverse;
   gap: 3rem;
 }
+@media (max-width: 767px) {
+  .doctors .container .flex .address-links ul {
+    gap: 2rem;
+  }
+}
 .doctors .container .flex .address-links ul li {
   cursor: pointer;
   -webkit-transition: 0.3s;
@@ -1236,7 +1241,9 @@ ul {
   text-align: center;
   width: 100%;
   width: 255px;
-  height: 50vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 767px) {
   .doctors .container .doctors-cards .doctor .doctor-box {

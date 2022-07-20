@@ -38,6 +38,12 @@
 
             a {
                 width: 30%;
+                @include breakpoints(small) {
+                    width: 60%;
+                }
+                @include breakpoints(mobile) {
+                    width: 80%;
+                }
                 img {
                     max-width: 100%;
                     border-radius: 20px;
@@ -45,6 +51,10 @@
                 }
             }
             .column {
+                width: 100%;
+                a {
+                    color : $section-color;
+                }
                 display: flex;
                 flex-direction: column;
                 @include breakpoints(small) {

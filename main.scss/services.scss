@@ -34,6 +34,8 @@
       @include flexCenter;
       .card {
         @include flexCenter;
+              
+        border-radius : 10px;
         background: $color-hover;
         width: 100%;
         max-width: 220px;
@@ -108,7 +110,8 @@
       display: flex;
       @include flexCenter;
       .card {
-        @include flexCenter;
+        @include flexCenter;        
+border-radius : 10px;
         background: $color-hover;
         width: 100%;
         max-width: 220px;
@@ -142,14 +145,24 @@
           transform: translateY(-25px);
       }
     }
-    .data-bs-target {
-      background-color: $main-color;
+    .carousel-indicators {
+
+      margin-bottom : -1rem;
+      .data-bs-target {
+        background-color:$section-color;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        position: relative;
+      }
     }
   }
 }
 /* End Ultra-Services */
 /* Start Ultra-Services-mob */
 .ultra-services-mob {
+  
   display: none;
   @include breakpoints(small) {
     display: block;
@@ -165,7 +178,9 @@
       display: flex;
       @include flexCenter;
       .card {
-        @include flexCenter;
+        @include flexCenter;        
+border-radius : 10px;
+
         background: $color-hover;
         width: 100%;
         max-width: 220px;
@@ -200,9 +215,16 @@
           transform: translateY(-25px);
       }
     }
-    .indicators-btn {
-      background-color: $main-color;
-      margin-bottom: -4%;
+    .carousel-indicators {
+      margin-bottom: -3rem;
+      .indicators-btn {
+        background-color: $main-color;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        position: relative;
+      }
     }
   }
 }
