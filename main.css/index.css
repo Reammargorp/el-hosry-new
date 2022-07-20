@@ -931,10 +931,10 @@ ul {
   left: 0%;
 }
 .team-two .container .carousel-indicators {
-  margin-bottom: -5rem;
+  margin-bottom: -10%;
 }
 .team-two .container .carousel-indicators .data-bs-target {
-  background-color: white;
+  background-color: #fff;
   width: 10px;
   height: 10px;
   margin: 5px;

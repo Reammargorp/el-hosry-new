@@ -722,14 +722,14 @@ ul {
       left: 0%;
     }
     .carousel-indicators {
-      margin-bottom: -5rem;
-        .data-bs-target {
-          background-color: white;
-          width: 10px;
-          height: 10px;
-          margin: 5px;
-          border-radius: 50%;
-          position: relative;
+      margin-bottom: -10%;
+      .data-bs-target {
+        background-color:  #fff;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        position: relative;
         }
     }
     .carousel-control-next {
