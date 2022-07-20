@@ -1169,7 +1169,7 @@ ul {
 }
 @media (max-width: 767px) {
   .doctors .container .flex .address-links ul {
-    gap: 2rem;
+    gap: 1rem !important;
   }
 }
 .doctors .container .flex .address-links ul li {

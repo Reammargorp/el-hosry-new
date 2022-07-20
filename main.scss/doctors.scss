@@ -46,7 +46,7 @@
               flex-direction: row-reverse;
               gap: 3rem;
               @include breakpoints(mobile) {
-                gap: 2rem;
+                gap: 1rem !important;
               }
                li {
                 cursor: pointer;
