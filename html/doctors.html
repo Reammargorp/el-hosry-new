@@ -33,12 +33,12 @@
 
         <div class="info-top-bar">
           <a href="mailto:info@elhosryclinics.com">info@elhosryclinics.com <i class="fa-regular fa-envelope"></i></a>
-          <a href="#">0518518585<i class="fa-solid fa-phone"></i></a>
+          <a href="tel:01020541683">01020541683<i class="fa-solid fa-phone"></i></a>
           <a href="#" class="clock">9am to 10pm  <i class="fa-regular fa-clock"></i></a>
         </div>
       </div>
     </div>
-    <!-- End Header -->        
+    <!-- End Header -->             
     <!-- Start Landing -->
     <div class="landing d-flex ">
       <!-- Start Contact Btn -->
@@ -179,24 +179,24 @@
                               <li class="all  fs-3 active">الكل</li>
                               <li class="all2 fs-3">المهندسين</li>
                               <li class="all3 fs-3">اكتوبر 1</li>
-                              <li class="all5 fs-3">اكتوبر 2</li>
-                              <li class="all4 fs-3">حدائق اكتوبر</li>
+                              <li class="all4 fs-3">اكتوبر 2</li>
+                              <li class="all5 fs-3">حدائق اكتوبر</li>
                           </ul>
       
                       </div>
                       <div class="doctors-list">
                         <select name="" id="list" class="doctors-list-js">
-                            <option value="حدد العيادات">حدد العيادات</option>
-                            <option value="جراحه" class="doctor-list-name">جراحه</option>
-                            <option value="توليد" class="doctor-list-name">توليد</option>
-                            <option value="عيون" class="doctor-list-name">عيون</option>
-                            <option value="اسنان" class="doctor-list-name">اسنان</option>
+                            <option value="clinics">حدد العيادات</option>
+                            <option value="surgery" class="doctor-list-name">جراحه</option>
+                            <option value="baby" class="doctor-list-name">الاطفال</option>
+                            <option value="dentist" class="doctor-list-name">اسنان</option>
+                            <option value="internal" class="doctor-list-name">باطنه</option>
                         </select>
                       </div>
                     </div>
                 <div class="doctors-cards pt-5 pb-5 mt-5">
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                        <div class="doctor-box zayed جراحه">
+                        <div class="doctor-box octoberOne surgery">
                             <img src="../imgs/preofile.png" alt="">
                             <div class="info">
                                 <h3 class="name mt-4 fs-2 fw-bold text-black">د.ناجي محمد صابر</h3>
@@ -206,7 +206,7 @@
                     </div>
                     </a>
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                      <div class="doctor-box zayed اسنان">
+                      <div class="doctor-box octoberOne octoberTwo surgery">
                         <img src="../imgs/preofile.png" alt="">
                         <div class="info">
                             <h3 class="name mt-4 fs-2 fw-bold text-black">د. وليد هيكل</h3>
@@ -216,7 +216,7 @@
                 </div>
                     </a>
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                        <div class="doctor-box october توليد">
+                        <div class="doctor-box octoberOne octoberTwo internal">
                             <img src="../imgs/preofile.png " alt="">
                             <div class="info">
                                 <h3 class="name mt-4 fs-2 fw-bold text-black">د.سعيد الجزار</h3>
@@ -226,7 +226,7 @@
                     </div>
                     </a>
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                        <div class="doctor-box cairo zayed اسنان">
+                        <div class="doctor-box octoberOne octoberTwo baby">
                             <img src="../imgs/preofile.png" alt="">
                             <div class="info">
                                 <h3 class="name mt-4 fs-2 fw-bold text-black">د.خالد شابون</h3>
@@ -236,7 +236,7 @@
                     </div>
                     </a>
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                        <div class="doctor-box cairo عيون">
+                        <div class="doctor-box octoberTwo dentist">
                             <img src="../imgs/preofile.png" alt="">
                             <div class="info">
                                 <h3 class="name mt-4 fs-2 fw-bold text-black">د. ياسر</h3>
@@ -246,7 +246,7 @@
                     </div>
                     </a>
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                        <div class="doctor-box giza عيون">
+                        <div class="doctor-box octoberOne octoberTwo surgery">
                             <img src="../imgs/preofile.png" alt="">
                             <div class="info">
                                 <h3 class="name mt-4 fs-2 fw-bold text-black">د . احمد طلعت</h3>
@@ -256,7 +256,7 @@
                     </div>
                     </a>
                     <a href="./doctorWaleedInfo.html" class="doctor">
-                        <div class="doctor-box giza">
+                        <div class="doctor-box octoberOne octoberTwo surgery">
                             <img src="../imgs/preofile.png" alt="">
                             <div class="info">
                                 <h3 class="name mt-4 fs-2 fw-bold text-black">د. محمد عماره</h3>
@@ -390,7 +390,7 @@
   let doctros          = document.querySelectorAll(".doctor")
 
   
-  console.log(doctorBoxes[3].classList.contains("col-lg-3"))
+  console.log(addressLinkFour)
  
   addressLinkOne.onclick =function() {
     for(let i = 0 ; i < addressLinks.length ; i++) {
@@ -408,7 +408,7 @@
     }
     for(let i = 0 ; i < doctorBoxes.length; i++) {
       doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("zayed")) {
+      if(doctorBoxes[i].classList.contains("giza")) {
         doctorBoxes[i].style.display = "flex"
       }
     }
@@ -420,7 +420,7 @@
     }
     for(let i = 0 ; i < doctorBoxes.length; i++) {
       doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("october")) {
+      if(doctorBoxes[i].classList.contains("octoberOne")) {
         doctorBoxes[i].style.display = "flex"
       }
     }
@@ -432,7 +432,7 @@
     }
     for(let i = 0 ; i < doctorBoxes.length; i++) {
       doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("cairo")) {
+      if(doctorBoxes[i].classList.contains("octoberTwo")) {
         doctorBoxes[i].style.display = "flex"
       }
     }
@@ -444,7 +444,7 @@
     }
     for(let i = 0 ; i < doctorBoxes.length; i++) {
       doctorBoxes[i].style.display = "none"
-      if(doctorBoxes[i].classList.contains("giza")) {
+      if(doctorBoxes[i].classList.contains("cairo")) {
         doctorBoxes[i].style.display = "flex"
       }
     }
@@ -461,39 +461,39 @@
       addressLinks[i].classList.remove("active")
       addressLinkOne.classList.add("active")
     }
-    if(selectedValue === "حدد العيادات") {
+    if(selectedValue === "clinics") {
       for(let i = 0 ; i < doctorBoxes.length; i++) {
         doctorBoxes[i].style.display = "block"
       }
     }
-    if(selectedValue === "جراحه") {
+    if(selectedValue === "surgery") {
       for(let i = 0 ; i < doctorBoxes.length; i++) {
         doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("جراحه")) {
+        if(doctorBoxes[i].classList.contains("surgery")) {
           doctorBoxes[i].style.display = "flex"
         }
       }
     }
-    if(selectedValue === "اسنان") {
+    if(selectedValue === "dentist") {
       for(let i = 0 ; i < doctorBoxes.length; i++) {
         doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("اسنان")) {
+        if(doctorBoxes[i].classList.contains("dentist")) {
           doctorBoxes[i].style.display = "flex"
         }
       }
     }
-    if(selectedValue === "توليد") {
+    if(selectedValue === "baby") {
       for(let i = 0 ; i < doctorBoxes.length; i++) {
         doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("توليد")) {
+        if(doctorBoxes[i].classList.contains("baby")) {
           doctorBoxes[i].style.display = "flex"
         }
       }
     }
-    if(selectedValue === "عيون") {
+    if(selectedValue === "internal") {
       for(let i = 0 ; i < doctorBoxes.length; i++) {
         doctorBoxes[i].style.display = "none"
-        if(doctorBoxes[i].classList.contains("عيون")) {
+        if(doctorBoxes[i].classList.contains("internal")) {
           doctorBoxes[i].style.display = "flex"
         }
       }
